@@ -1,3 +1,7 @@
 # INT3306 - MagicPost
 
-Finalize git move
+INT3306 with MERN stack
+
+Member:
+
+- Lê Quang Đông - 21020013
