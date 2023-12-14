@@ -1,5 +1,7 @@
 import User from "../models/user.model.js";
 import bcryptjs from 'bcryptjs'
+import { errorHandler } from "../utils/error.js";
+import jwt from 'jsonwebtoken'
 
 export const signup = async (req, res, next) => {
     console.log(req.body);
@@ -15,4 +17,28 @@ export const signup = async (req, res, next) => {
         next(error)
     }
 
+}
+
+export const signin = async (req, res, next) => {
+    console.log(req.body);
+
+    // add account type later
+    const {username, password} = req.body;
+
+    try {
+        const validUsername = await User.findOne({username});
+        if(!validUsername) 
+            next(errorHandler(404, 'User not found!'));
+        const validPassword = bcryptjs.compareSync(password, validUsername.password);
+        if(!validPassword)
+            next(errorHandler(401, 'Invalid username or password!'));
+        const token = jwt.sign({id: validUsername._id}, process.env.JWT_SECRET);
+        const {password: pwd, ...rest} = validUsername._doc;
+        res
+            .cookie('access_token', token, {httpOnly: true, maxAge: 24 * 60 * 60 * 1000})
+            .status(200)
+            .json(rest);
+    } catch(error) {
+        next(error)
+    }
 }
