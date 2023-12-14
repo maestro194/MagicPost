@@ -41,7 +41,7 @@ export default function Signup() {
 			// console.log(data)
 		} catch (error) {
 			setLoading(false);
-			setError(null);
+			setError(error.message);
 		}
 	}
 
