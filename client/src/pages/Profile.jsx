@@ -1,8 +1,26 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { signout } from '../../../api/controllers/auth.controller';
+import { signOutFailure, signOutStart, signOutSuccess } from '../redux/user/userSlice';
 
 export default function Profile() {
   const { currentUser } = useSelector((state) => state.user);
+
+  const handleSignout = async () => { 
+    try {
+      dispatch(signOutStart())
+      const res = await fetch('/api/auth/signout');
+      const data = await res.json();
+      if(data.success == false) {
+        dispatch(signOutFailure(data.message))
+      }
+      dispatch(signOutSuccess())
+    } catch (error) {
+      dispatch(signOutFailure(error.message))
+    }
+  }
+
   return (
     <div>
       <h1 className='text-center font-bold text-3xl my-10'>Profile</h1>
@@ -15,7 +33,10 @@ export default function Profile() {
         <h2 className='font-semibold text-center'>{currentUser.fullname}</h2>
         <h3 className='text-center'>{currentUser.type}</h3>
 
-        <button className='bg-red-500 border text-white rounded-lg hover:opacity-90 p-3'>
+        <button 
+          onClick={handleSignout}
+          className='bg-red-500 border text-white rounded-lg hover:opacity-90 p-3'
+        >
           Log Out
         </button>
       </div>
