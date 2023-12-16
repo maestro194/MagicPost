@@ -34,10 +34,19 @@ export const signin = async (req, res, next) => {
         const token = jwt.sign({id: validUsername._id}, process.env.JWT_SECRET);
         const {password: pwd, ...rest} = validUsername._doc;
         res
-            .cookie('access_token', token, {httpOnly: true, maxAge: 24 * 60 * 60 * 1000})
+            .cookie('access_token', token, {httpOnly: true})
             .status(200)
             .json(rest);
     } catch(error) {
         next(error)
+    }
+}
+
+export const signout = async (req, res, next) => {
+    try {
+        res.clearCookie('access_token');
+        res.status(200).json('User signout successfully');
+    } catch(error) {
+        next(error);    
     }
 }

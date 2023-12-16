@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 export default function Header() {
+    const { currentUser } = useSelector((state) => state.user);
   return (
     <header className='bg-slate-200 shadow-md'>
         <div className='flex justify-between items-center max-w-5xl mx-auto p-3'>
@@ -16,9 +18,17 @@ export default function Header() {
                 <Link to='/about'>
                     <li className='hidden sm:inline text-slate-700 hover:underline'>About</li>
                 </Link>
-                <Link to='/signin'>
-                    <li className='hidden sm:inline text-slate-700 hover:underline'>Sign In</li>
-                </Link>
+                
+                {currentUser ? (
+                    <Link to='/profile'>
+                        <li className='hidden sm:inline text-slate-700 hover:underline'>Profile</li>
+                    </Link>
+                ) : (    
+                    <Link to='/signin'>
+                        <li className='hidden sm:inline text-slate-700 hover:underline'>Sign in</li>
+                    </Link>
+                )}
+                
             </ul>
         </div>
     </header>
