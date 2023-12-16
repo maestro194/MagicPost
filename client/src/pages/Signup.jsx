@@ -71,9 +71,16 @@ export default function Signup() {
           id="password"
           onChange={handleChange}
         />
-				<input
+		<input
           type="text"
-          placeholder="type"
+          placeholder="Full Name"
+          className="border p-3 rounded-lg"
+          id="fullname"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          placeholder="Account Type"
           className="border p-3 rounded-lg"
           id="type"
           onChange={handleChange}
