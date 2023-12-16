@@ -6,18 +6,22 @@ import { signOutFailure, signOutStart, signOutSuccess } from '../redux/user/user
 
 export default function Profile() {
   const { currentUser } = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+
 
   const handleSignout = async () => { 
     try {
       dispatch(signOutStart())
       const res = await fetch('/api/auth/signout');
       const data = await res.json();
-      if(data.success == false) {
-        dispatch(signOutFailure(data.message))
+
+      if(data.success === false) {
+        dispatch(signOutFailure(data.message));
+        return;
       }
-      dispatch(signOutSuccess())
+      dispatch(signOutSuccess(data))
     } catch (error) {
-      dispatch(signOutFailure(error.message))
+      dispatch(signOutFailure(data.message))
     }
   }
 
@@ -37,7 +41,7 @@ export default function Profile() {
           onClick={handleSignout}
           className='bg-red-500 border text-white rounded-lg hover:opacity-90 p-3'
         >
-          Log Out
+          Sign Out
         </button>
       </div>
 
