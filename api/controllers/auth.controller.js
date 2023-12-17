@@ -46,7 +46,7 @@ export const signout = async (req, res, next) => {
     try {
         res.clearCookie('access_token');
         res.status(200).json('User signout successfully');
-    } catch(error) 
+    } catch(error) {
         next(error);
     }
 }
