@@ -35,8 +35,13 @@ export default function Signin() {
         return;
       }
       dispatch(signInSuccess(data));
-      navigate("/home");						// change this later to specific page for each type of user
-      // console.log(data)
+      if (data.type === "General Manager") navigate("/gm");
+      else if (data.type === "Warehouse Manager") navigate("/wm");
+      else if (data.type === "Warehouse Employee") navigate("/we");
+      else if (data.type === "Office Manager") navigate("/om");
+      else if (data.type === "Office Employee") navigate("/oe");
+      else navigate("/");						// change this later to specific page for each type of user
+      console.log(data)
     } catch (error) {
       dispatch(signInFailure(error.message));
     }
