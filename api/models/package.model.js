@@ -1,21 +1,72 @@
 import mongoose from "mongoose";
 
 const packageSchema = new mongoose.Schema({
-    username: {
+    trackingNumber: {
+        type: String,
+        required: true,
+    },
+
+    sender: {
         type: String, 
         required: true,
-        unique: true
     },
 
-    password: {
+    fromLocation: {
         type: String,
         required: true,
     },
 
-    accountType: {
+    receiver: {
         type: String,
         required: true,
-    }
+    },
+
+    toLocation: {
+        type: String,
+        required: true,
+    },
+
+    packageType: {
+        type: String,
+        required: true,
+    },
+
+    totalValue: {
+        type: Number,
+        required: true,
+    },
+
+    weight: {
+        type: Number,
+        required: true,
+    },
+
+    deliveredDate: {
+        type: Date,
+    },
+
+    shippingCost: {
+        type: Number,
+        required: true,
+    },
+
+    cashOnDelivery: {  
+        type: Number,
+        required: true,
+    },
+
+    receivedDate: {
+        type: Date,
+    },
+
+    notes: {
+        type: String,
+    },
+
+    deliveryStatus: {
+        type: String,
+        required: true,
+    },
 }, {
     timestamps: true
 })
