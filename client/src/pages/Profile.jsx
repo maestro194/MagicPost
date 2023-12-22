@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { signout } from '../../../api/controllers/auth.controller';
 import { signOutFailure, signOutStart, signOutSuccess } from '../redux/user/userSlice';
 
 export default function Profile() {

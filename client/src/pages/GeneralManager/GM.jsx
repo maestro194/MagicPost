@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaHome, FaUser, FaCube } from 'react-icons/fa'
+import ProfileCard from '../../components/ProfileCard'
 
 export default function GM() {
   const showProfile = () => {
@@ -35,7 +36,15 @@ export default function GM() {
             </li>
           </ul>
         </div>
+
+        {/* right content */}
+        <div className='p-6 gap-4 w-full'>
+          <div className='bg-white border rounded-lg'>
+            <ProfileCard />
+          </div>
+        </div>
       </div>
+
     </div>
   )
 }
