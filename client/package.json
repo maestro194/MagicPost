@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "@reduxjs/toolkit": "^2.0.1",
     "jsonwebtoken": "^9.0.2",
     "react": "^18.2.0",
