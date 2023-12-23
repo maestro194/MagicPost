@@ -1,4 +1,4 @@
-import User from "../models/user.model"
+import User from "../models/user.model.js"
 
 export const test = (req, res) => {
     res.json({
@@ -27,5 +27,11 @@ export const gmUsers = async (req, res) => {
     }
     res.json({
         message: 'GM Users',
+    })
+}
+
+export const gmPackages = (req, res) => {
+    res.json({
+        message: 'GM Packages',
     })
 }
