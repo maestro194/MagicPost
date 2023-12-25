@@ -31,11 +31,7 @@ export default function App() {
       {/* company route */}
       <Route element={<PrivateRoute/>}>
         <Route path='/profile' element={<Profile/>}/>
-        <Route path='gm' element={<GM/>}>
-          <Route path='home' element={<GMHome/>}></Route>
-          <Route path='users' element={<GMUsers/>}></Route>
-          <Route path='packages' element={<GMPackages/>}></Route>
-        </Route>
+        <Route path='gm' element={<GM/>}></Route>
         <Route path='om' element={<OfficeManager/>}/>
         <Route path='oe' element={<OfficeEmployee/>}/>
         <Route path='wm' element={<WarehouseManager/>}/>

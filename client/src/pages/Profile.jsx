@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { signOutFailure, signOutStart, signOutSuccess } from '../redux/user/userSlice';
+import { signOutFailure, signOutStart, signOutSuccess } from '../redux/slice/userSlice';
 
 export default function Profile() {
   const { currentUser } = useSelector((state) => state.user);

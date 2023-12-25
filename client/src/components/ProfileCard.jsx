@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { FaSignOutAlt } from 'react-icons/fa'
-import { signOutFailure, signOutStart, signOutSuccess } from '../redux/user/userSlice';
+import { signOutFailure, signOutStart, signOutSuccess } from '../redux/slice/userSlice';
 
 export default function ProfileCard() {
   const { currentUser } = useSelector((state) => state.user);
