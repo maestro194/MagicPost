@@ -3,12 +3,29 @@ import { FaHome, FaUser, FaCube } from "react-icons/fa";
 import Profile from "./components/Profile";
 import Users from "./components/Users";
 import Packages from "./components/Packages";
-import { fetchUsersStart, fetchUsersFailure, fetchUsersSuccess } from "../../redux/slice/gmSlice";
+import {
+  fetchUsersStart,
+  fetchUsersFailure,
+  fetchUsersSuccess,
+  fetchPackagesFailure,
+  fetchPackagesStart,
+  fetchPackagesSuccess,
+} from "../../redux/slice/gmSlice";
 import { useDispatch } from "react-redux";
 
 export default function GM() {
   const [state, setState] = useState("profile");
-	const dispatch = useDispatch();
+  const [users, setUsers] = useState([{
+    id: 1,
+    username: "test",
+    email: "test@test.com", 
+    type: "General Manager",
+    name: "Test",
+  }]);
+  const [packages, setPackages] = useState([]);
+  const dispatch = useDispatch();
+
+  console.log(users);
 
   const handleClick = (selected) => {
     console.log(selected);
@@ -34,14 +51,33 @@ export default function GM() {
           dispatch(fetchUsersFailure(data.message));
           return;
         }
+        setUsers(data);
         dispatch(fetchUsersSuccess(data));
       } catch (error) {
         dispatch(fetchUsersFailure(error.message));
       }
     } else if (selected === "packages") {
-      console.log("packages!@!!");
+      try {
+        dispatch(fetchPackagesStart());
+        const res = await fetch("/api/gm/packages", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        const data = await res.json();
+        console.log(data);
+        if (data.success === false) {
+          dispatch(fetchPackagesFailure(data.message));
+          return;
+        }
+        setPackages(data);
+        dispatch(fetchPackagesSuccess(data));
+      } catch (error) {
+        dispatch(fetchPackagesFailure(error.message));
+      }
     }
-  }
+  };
 
   return (
     <div>
@@ -81,12 +117,18 @@ export default function GM() {
         {/* right content */}
         <div className="p-6 gap-4 w-full">
           <div className="bg-white border rounded-lg">
-            { state === "profile" ? (
+            {state === "profile" ? (
               <Profile />
             ) : state === "users" ? (
-              <Users />
+              <Users
+                users={users.users}
+              />
+              
+
             ) : state === "packages" ? (
-              <Packages />
+              <Packages 
+                packages={packages}
+              />
             ) : (
               <div></div>
             )}
