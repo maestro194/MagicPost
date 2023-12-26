@@ -7,8 +7,9 @@ export const signup = async (req, res, next) => {
     console.log(req.body);
 
     const {username, email, password, fullname, type} = req.body;
+    const id = 1 + Math.floor(Math.random() * 1000000);
     const hashedPassword = bcryptjs.hashSync(password, 10);
-    const newUser = new User({username, password: hashedPassword, email, fullname, type});
+    const newUser = new User({id, username, password: hashedPassword, email, fullname, type});
 
     try {
         await newUser.save();
