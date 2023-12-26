@@ -1,5 +1,12 @@
 export const offices = [
   {
+    officeCode: 0,
+    officeName: "HEAD OFFICE",
+    location: "Ha Noi",
+    phone: "02412345678",
+    type: "Office",
+  },
+  {
     officeCode: 1,
     officeName: "Ba Dinh",
     location: "Ba Dinh",

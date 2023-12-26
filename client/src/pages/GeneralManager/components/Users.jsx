@@ -365,6 +365,7 @@ export default function Users({ users }) {
             initialState={{
               pagination: { paginationModel: { pageSize: 12 } },
             }}
+            pageSizeOptions={[12, 25, 50, 100]}
             checkboxSelection
             onRowSelectionModelChange={(e) => handleSelectUser(e)}
           ></DataGrid>
