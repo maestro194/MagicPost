@@ -1,5 +1,6 @@
 import User from "../models/user.model.js"
 import Packages from "../models/package.model.js"
+import Office from "../models/office.model.js"
 
 export const test = (req, res) => {
     res.json({
@@ -46,6 +47,19 @@ export const gmPackages = async (req, res) => {
         const packages = await Packages.find();
         res.status(200).json({
             packages: packages,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const gmOffices = async (req, res) => {
+    try {
+        const offices = await Office.find();
+        res.status(200).json({
+            offices: offices,
         })
     } catch (err) { 
         res.status(404).json({

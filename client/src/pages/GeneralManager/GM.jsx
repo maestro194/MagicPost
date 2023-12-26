@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { FaHome, FaUser, FaCube } from "react-icons/fa";
+import { FaHome, FaUser, FaCube, FaBuilding } from "react-icons/fa";
 import Profile from "./components/Profile";
 import Users from "./components/Users";
 import Packages from "./components/Packages";
+import Offices from "./components/Offices";
 import {
   fetchUsersStart,
   fetchUsersFailure,
@@ -10,6 +11,9 @@ import {
   fetchPackagesFailure,
   fetchPackagesStart,
   fetchPackagesSuccess,
+  fetchOfficesFailure,
+  fetchOfficesStart,
+  fetchOfficesSuccess,
 } from "../../redux/slice/gmSlice";
 import { useDispatch } from "react-redux";
 
@@ -24,6 +28,7 @@ export default function GM() {
     officeCode: 1,
   }]);
   const [packages, setPackages] = useState([]);
+  const [offices, setOffices] = useState([]);
   const dispatch = useDispatch();
 
   // console.log(users);
@@ -77,6 +82,26 @@ export default function GM() {
       } catch (error) {
         dispatch(fetchPackagesFailure(error.message));
       }
+    } else if (selected === "offices") {
+      try {
+        dispatch(fetchOfficesStart())
+        const res = await fetch("/api/gm/offices", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        const data = await res.json();
+        // console.log(data);
+        if (data.success === false) {
+          dispatch(fetchOfficesFailure(data.message));
+          return;
+        }
+        setOffices(data);
+        dispatch(fetchOfficesSuccess(data));
+      } catch (error) {
+        dispatch(fetchOfficesFailure(error.message));
+      }
     }
   };
 
@@ -112,6 +137,13 @@ export default function GM() {
               <FaCube className="m-1" />
               <span className="hidden md:inline-flex">Package</span>
             </li>
+            <li
+              className="flex gap-3 w-full h-12 py-3 pl-4 hover:bg-slate-300"
+              onClick={() => handleClick("offices")}
+            >
+              <FaBuilding className="m-1" />
+              <span className="hidden md:inline-flex">Offices</span>
+            </li>
           </ul>
         </div>
 
@@ -126,9 +158,13 @@ export default function GM() {
               />
             ) : state === "packages" ? (
               <Packages 
-                packages={packages}
+                packages={packages.packages}
               />
-            ) : (
+            ) : state === "offices" ? (
+              <Offices
+                offices={offices.offices}
+              />
+            ) :(
               <div></div>
             )}
           </div>

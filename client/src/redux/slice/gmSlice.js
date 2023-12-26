@@ -46,6 +46,18 @@ const gmSlice = createSlice({
             state.loading = false;
             state.error = action.payload;
         },
+        fetchOfficesStart: (state) => {
+            state.loading = true;
+        },
+        fetchOfficesSuccess: (state, action) => {
+            state.loading = false;
+            state.offices = action.payload;
+            state.error = null;
+        },
+        fetchOfficesFailure: (state, action) => {
+            state.loading = false;
+            state.error = action.payload;
+        },
     }
 });
 
@@ -53,6 +65,7 @@ export const {
     fetchUsersStart, fetchUsersSuccess, fetchUsersFailure,
     fetchPackagesStart, fetchPackagesSuccess, fetchPackagesFailure,
     deleteUserFailure, deleteUserStart, deleteUserSuccess,
+    fetchOfficesStart, fetchOfficesSuccess, fetchOfficesFailure
 } = gmSlice.actions;
 
 export default gmSlice.reducer;

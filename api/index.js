@@ -21,6 +21,9 @@ mongoose
         // (inserted data)
         // User.insertMany(users)
         // Office.insertMany(offices)
+        // (delete all data)
+        // User.deleteMany({})
+        // Office.deleteMany({})
     })
     .catch((err) => {
         console.log(err);

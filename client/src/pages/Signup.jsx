@@ -71,7 +71,7 @@ export default function Signup() {
           id="password"
           onChange={handleChange}
         />
-		<input
+		    <input
           type="text"
           placeholder="Full Name"
           className="border p-3 rounded-lg"
@@ -83,6 +83,13 @@ export default function Signup() {
           placeholder="Account Type"
           className="border p-3 rounded-lg"
           id="type"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          placeholder="Account Type"
+          className="border p-3 rounded-lg"
+          id="officeCode"
           onChange={handleChange}
         />
         <button disabled={loading} className="bg-slate-700 text-white p-3 rounded-lg uppercase hover: opacity-95 disabled:opacity-80">
