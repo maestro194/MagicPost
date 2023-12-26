@@ -22,8 +22,142 @@ import {
 } from "../../../redux/slice/gmSlice";
 import { useDispatch } from "react-redux";
 
+const accountTypes = [
+  {
+    value: "Warehouse Manager",
+    label: "Warehouse Manager",
+  },
+  {
+    value: "Office Manager",
+    label: "Office Manager",
+  }
+];
+
+const officeCode = [
+  {
+    value: "1",
+    label: "Ba Dinh",
+  },
+  {
+    value: "2",
+    label: "Hoan Kiem",
+  },
+  {
+    value: "3",
+    label: "Hai Ba Trung",
+  },
+  {
+    value: "4",
+    label: "Dong Da",
+  },
+  {
+    value: "5",
+    label: "Tay Ho",
+  },
+  {
+    value: "6",
+    label: "Cau Giay",
+  },
+  {
+    value: "7",
+    label: "Long Bien",
+  },
+  {
+    value: "8",
+    label: "Hoang Mai",
+  },
+  {
+    value: "9",
+    label: "Thanh Xuan",
+  },
+  {
+    value: "10",
+    label: "Ha Dong",
+  },
+  {
+    value: "11",
+    label: "Son Tay",
+  },
+  {
+    value: "12",
+    label: "Ba Vi",
+  },
+  {
+    value: "13",
+    label: "Phuc Tho",
+  },
+  {
+    value: "14",
+    label: "Dan Phuong",
+  },
+  {
+    value: "15",
+    label: "Hoai Duc",
+  },
+  {
+    value: "16",
+    label: "Quoc Oai",
+  },
+  {
+    value: "17",
+    label: "Thach That",
+  },
+  {
+    value: "18",
+    label: "Chuong My",
+  },
+  {
+    value: "19",
+    label: "Thanh Oai",
+  },
+  {
+    value: "20",
+    label: "Thuong Tin",
+  },
+  {
+    value: "21",
+    label: "Phu Xuyen",
+  },
+  {
+    value: "22",
+    label: "Ung Hoa",
+  },
+  {
+    value: "23",
+    label: "My Duc",
+  },
+  {
+    value: "24",
+    label: "Me Linh",
+  },
+  {
+    value: "25",
+    label: "Soc Son",
+  },
+  {
+    value: "26",
+    label: "Dong Anh",
+  },
+  {
+    value: "27",
+    label: "Gia Lam",
+  },
+  {
+    value: "28",
+    label: "Thanh Tri",
+  },
+  {
+    value: "29",
+    label: "Nam Tu Liem",
+  },
+  {
+    value: "30",
+    label: "Bac Tu Liem",
+  }
+];
+
 export default function Users({ users }) {
-  console.log(users);
+  // console.log(users);
 
   const [formData, setFormData] = useState({});
   const [open, setOpen] = useState(false);
@@ -32,16 +166,7 @@ export default function Users({ users }) {
   const [selected, setSelected] = useState([]);
   const dispatch = useDispatch();
 
-  const accountTypes = [
-    {
-      value: "Warehouse Manager",
-      label: "Warehouse Manager",
-    },
-    {
-      value: "Office Manager",
-      label: "Office Manager",
-    }
-  ]
+  
 
   const handleChange = (name, value) => {
     setFormData({
@@ -193,6 +318,21 @@ export default function Users({ users }) {
                 </MenuItem>
               ))}
             </TextField>
+            <TextField
+              margin="dense"
+              id="type"
+              label="Location"
+              select
+              fullWidth
+              variant="standard"
+              onChange={(event) => handleChange("officeCode", event.target.value)}
+            >
+              {officeCode.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
             {error && <p className="text-red-500 mt-5">{error}</p>}
           </DialogContent>
           <DialogActions>
@@ -209,20 +349,22 @@ export default function Users({ users }) {
         </button>
       </div>
 
-      <div className="bg-white border rounded-lg">
-        <Box height="auto">
+      <div className="bg-white border rounded-lg h-[46.05rem]">
+        <Box className="h-full">
           <DataGrid
             getRowId={(users) => users._id}
             columns={[
               { field: "id", headerName: "ID", flex: 1 },
               { field: "username", headerName: "USERNAME", flex: 1 },
-              { field: "email", headerName: "EMAIL", flex: 2 },
-              { field: "type", headerName: "TYPE", flex: 1 },
+              { field: "email", headerName: "EMAIL", flex: 2},
+              { field: "type", headerName: "TYPE", flex: 2 },
               { field: "fullname", headerName: "NAME", flex: 2 },
+              { field: "officeCode", headerName: "OFFICE", flex: 1 },
             ]}
             rows={users || []}
-            pageSize={1}
-            rowsPerPageOptions={[1]}
+            initialState={{
+              pagination: { paginationModel: { pageSize: 12 } },
+            }}
             checkboxSelection
             onRowSelectionModelChange={(e) => handleSelectUser(e)}
           ></DataGrid>

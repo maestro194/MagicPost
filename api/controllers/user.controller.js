@@ -10,7 +10,7 @@ export const test = (req, res) => {
 // GM call
 export const gmUsers = async (req, res) => {
     try {
-        const users = await User.find({type: /Manager/i}, "id username email type fullname", {skip: 1});
+        const users = await User.find({type: /Manager/i}, "id username email type fullname officeCode", {skip: 1});
         res.status(200).json({
             users: users,
         })

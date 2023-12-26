@@ -6,10 +6,21 @@ import authRouter from './routes/auth.route.js'
 import gmRouter from './routes/gm.route.js'
 dotenv.config();
 
+// data import
+import { users } from './data/userData.js'
+import { offices } from './data/officeData.js'
+import User from './models/user.model.js';
+import Office from './models/office.model.js';
+
 mongoose
     .connect(process.env.MONGO)
     .then(() => {
         console.log("MongoDB connected");
+
+        // ONLY INSERT DATA ONCE
+        // (inserted data)
+        // User.insertMany(users)
+        // Office.insertMany(offices)
     })
     .catch((err) => {
         console.log(err);

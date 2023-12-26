@@ -21,11 +21,12 @@ export default function GM() {
     email: "test@test.com", 
     type: "General Manager",
     name: "Test",
+    officeCode: 1,
   }]);
   const [packages, setPackages] = useState([]);
   const dispatch = useDispatch();
 
-  console.log(users);
+  // console.log(users);
 
   const handleClick = (selected) => {
     console.log(selected);
@@ -46,7 +47,7 @@ export default function GM() {
           },
         });
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         if (data.success === false) {
           dispatch(fetchUsersFailure(data.message));
           return;
@@ -115,7 +116,7 @@ export default function GM() {
         </div>
 
         {/* right content */}
-        <div className="p-6 gap-4 w-full">
+        <div className="p-6 gap-4 w-full h-4/5">
           <div className="">
             {state === "profile" ? (
               <Profile />
