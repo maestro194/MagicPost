@@ -10,11 +10,11 @@ const transactionSchema = new mongoose.Schema({
     required: true,
   },
   fromLocation: {
-    type: String,
+    type: Number,
     required: true,
   },
   toLocation: {
-    type: String,
+    type: Number,
     required: true,
   },
   status: {
@@ -23,8 +23,8 @@ const transactionSchema = new mongoose.Schema({
   },
   date: {
     type: Date,
+    required: true,
   },
-    
 }, {
   timestamps: true
 })

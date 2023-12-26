@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const packageSchema = new mongoose.Schema({
-    trackingNumber: {
+    packageId: {
         type: String,
         required: true,
     },
