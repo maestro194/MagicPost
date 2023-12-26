@@ -116,15 +116,13 @@ export default function GM() {
 
         {/* right content */}
         <div className="p-6 gap-4 w-full">
-          <div className="bg-white border rounded-lg">
+          <div className="">
             {state === "profile" ? (
               <Profile />
             ) : state === "users" ? (
               <Users
                 users={users.users}
               />
-              
-
             ) : state === "packages" ? (
               <Packages 
                 packages={packages}

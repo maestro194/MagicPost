@@ -35,12 +35,24 @@ const gmSlice = createSlice({
             state.loading = false;
             state.error = action.payload;
         },
+        deleteUserStart: (state) => {
+            state.loading = true;
+        },
+        deleteUserSuccess: (state) => {
+            state.loading = false;
+            state.error = null;
+        },
+        deleteUserFailure: (state, action) => {
+            state.loading = false;
+            state.error = action.payload;
+        },
     }
 });
 
 export const {
     fetchUsersStart, fetchUsersSuccess, fetchUsersFailure,
     fetchPackagesStart, fetchPackagesSuccess, fetchPackagesFailure,
+    deleteUserFailure, deleteUserStart, deleteUserSuccess,
 } = gmSlice.actions;
 
 export default gmSlice.reducer;

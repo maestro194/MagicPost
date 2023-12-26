@@ -24,9 +24,9 @@ export default function ProfileCard() {
   }
 
   return (
-    <div className='w-full h-full flex flex-col p-4'>
+    <div className='w-full h-full flex flex-col p-2 gap-4'>
       <div className='flex flex-row justify-between'>
-        <h1 className='font-bold text-3xl pl-2'>Profile</h1>
+        <h1 className='font-bold text-3xl'>Profile</h1>
 
         <button 
           onClick={handleSignout}
@@ -37,7 +37,7 @@ export default function ProfileCard() {
         </button>
       </div>
       
-      <div className='flex justify-start gap-4 p-6'>
+      <div className='flex justify-start gap-4 p-6 bg-white border rounded-lg'>
         <img 
           src='https://t4.ftcdn.net/jpg/05/49/98/39/360_F_549983970_bRCkYfk0P6PP5fKbMhZMIb07mCJ6esXL.jpg' 
           className='w-40 h-40 rounded-full'

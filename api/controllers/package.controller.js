@@ -2,6 +2,7 @@ import Package from "../models/package.model";
 
 export const createPackage = async (req, res, next) => {
   const {
+    trackingNumber,
     sender,
     fromLocation,
     receiver,
@@ -14,6 +15,7 @@ export const createPackage = async (req, res, next) => {
     deliveryStatus,
   } = req.body;
   const newPackage = new Package({
+    trackingNumber,
     sender,
     fromLocation,
     receiver,
