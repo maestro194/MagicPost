@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 import userRouter from './routes/user.route.js'
 import authRouter from './routes/auth.route.js'
 import gmRouter from './routes/gm.route.js'
+import wmRouter from './routes/wm.route.js'
+import omRouter from './routes/om.route.js'
 dotenv.config();
 
 // data import
@@ -40,6 +42,8 @@ app.listen(3000, () => {
 app.use('/api/user', userRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/gm', gmRouter);
+app.use('/api/wm', wmRouter);
+app.use('/api/om', omRouter);
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;

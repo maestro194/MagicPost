@@ -67,3 +67,98 @@ export const gmOffices = async (req, res) => {
         })
     }
 }
+
+// WM call
+export const wmUsers = async (req, res) => {
+    try {
+        const users = await User.find({type: /Warehouse Employee/i}, "id username email type fullname officeCode");
+        res.status(200).json({
+            users: users,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const wmDeleteUser = async (req, res) => {
+    console.log(req.body);
+    try {
+        const _id = req.body;
+        if(!_id) 
+            return res.status(400).json({ message: "Missing _id" })
+        const length = _id.length;
+        for(let i = 0; i < length; i++) {
+            await User.findOneAndDelete({ _id: _id });
+        }
+        res.status(200).json({
+            message: "User deleted successfully",
+        })
+    } catch (err) {
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}   
+
+export const wmPackages = async (req, res) => {
+    try {
+        const packages = await Packages.find();
+        res.status(200).json({
+            packages: packages,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+// om call
+
+export const omUsers = async (req, res) => {
+    try {
+        const users = await User.find({type: /Office Employee/i}, "id username email type fullname officeCode");
+        res.status(200).json({
+            users: users,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const omDeleteUser = async (req, res) => {
+    console.log(req.body);
+    try {
+        const _id = req.body;
+        if(!_id) 
+            return res.status(400).json({ message: "Missing _id" })
+        const length = _id.length;
+        for(let i = 0; i < length; i++) {
+            await User.findOneAndDelete({ _id: _id });
+        }
+        res.status(200).json({
+            message: "User deleted successfully",
+        })
+    } catch (err) {
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const omPackages = async (req, res) => {
+    try {
+        const packages = await Packages.find();
+        res.status(200).json({
+            packages: packages,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
