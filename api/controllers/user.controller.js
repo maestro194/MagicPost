@@ -162,3 +162,74 @@ export const omPackages = async (req, res) => {
         })
     }
 }
+
+// WE call
+
+export const wePackages = async (req, res) => {
+    try {
+        const packages = await Packages.find();
+        res.status(200).json({
+            packages: packages,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+// OE call
+
+export const oeTransactions = async (req, res) => {
+    try {
+        const transactions = await Transaction.find();
+        res.status(200).json({
+            transactions: transactions,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const oePackages = async (req, res) => {
+    try {
+        const packages = await Packages
+        .find({}, "packageId sender fromLocation receiver toLocation packageType totalValue weight deliveredDate shippingCost cashOnDelivery receivedDate notes deliveryStatus")
+        
+        res.status(200).json({
+            packages: packages,
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const oeCreatePackages = async (req, res) => {
+    console.log(req.body);
+
+    const {sender, fromLocation, receiver, toLocation, packageType, totalValue, weight, shippingCost, cashOnDelivery, notes} = req.body;
+    const deliveredDate = Date.now();
+    const receivedDate = null;
+    const deliveryStatus = "In transit";
+    const packageId = 1 + Math.floor(Math.random() * 1000000);
+
+    const newPackage = new Packages({
+        packageId, sender, fromLocation, receiver, toLocation, packageType, totalValue, weight, deliveredDate, shippingCost, cashOnDelivery, receivedDate, notes, deliveryStatus
+    })
+
+    try {
+        await newPackage.save();
+        res.status(201).json({
+            message: "Package created successfully",   
+        })
+    } catch (err) { 
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+

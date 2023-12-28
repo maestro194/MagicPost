@@ -3,6 +3,8 @@ import userReducer from './slice/userSlice'
 import gmReducer from './slice/gmSlice'
 import wmReducer from './slice/wmSlice'
 import omReducer from './slice/omSlice'
+import weReducer from './slice/weSlice'
+import oeReducer from './slice/oeSlice'
 import { persistReducer, persistStore } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
@@ -11,6 +13,8 @@ const rootReducer = combineReducers({
   gm: gmReducer,
   wm: wmReducer,
   om: omReducer,
+  we: weReducer,
+  oe: oeReducer,
 });
 
 const persistConfig = {

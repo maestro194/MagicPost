@@ -32,12 +32,12 @@ const packageSchema = new mongoose.Schema({
     },
 
     totalValue: {
-        type: Number,
+        type: String,
         required: true,
     },
 
     weight: {
-        type: Number,
+        type: String,
         required: true,
     },
 
@@ -46,12 +46,12 @@ const packageSchema = new mongoose.Schema({
     },
 
     shippingCost: {
-        type: Number,
+        type: String,
         required: true,
     },
 
     cashOnDelivery: {  
-        type: Number,
+        type: String,
         required: true,
     },
 
