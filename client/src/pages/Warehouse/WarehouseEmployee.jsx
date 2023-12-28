@@ -29,7 +29,7 @@ export default function WarehouseEmployee() {
     } else if(selected === "packages") {
       try {
         dispatch(fetchPackagesStart());
-        const res = await fetch(`/api/we/packages`, {
+        const res = await fetch(`/api/we/packages/${currentUser.officeCode}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

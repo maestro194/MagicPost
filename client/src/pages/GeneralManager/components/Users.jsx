@@ -184,6 +184,9 @@ export default function Users({ users }) {
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
+    if(formData.type === "Warehouse Manager") {
+      formData.officeCode = parseInt(formData.officeCode) + 30;
+    }
 		try {
 			setLoading(true);
 			const res = await fetch('/api/auth/signup', {

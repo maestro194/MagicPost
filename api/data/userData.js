@@ -275,7 +275,7 @@ export const users = [
     email: "leduchoa@magicpost.com",
     password: "leduchoa",
     fullname: "Le Duc Hoa",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Manager",
   },
   {
@@ -284,7 +284,7 @@ export const users = [
     email: "leduc@magicpost.com",
     password: "leduc",
     fullname: "Le Duc ",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Manager",
   },
   {
@@ -293,7 +293,7 @@ export const users = [
     email: "lethuyanh@magicpost.com",
     password: "lethuyanh",
     fullname: "Le Thuy Anh",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Manager",
   },
   {
@@ -302,7 +302,7 @@ export const users = [
     email: "lethuyduc@magicpost.com",
     password: "lethuyduc",
     fullname: "Le Thuy Duc",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Manager",
   },
   {
@@ -311,7 +311,7 @@ export const users = [
     email: "lethuyhuy@magicpost.com",
     password: "lethuyhuy",
     fullname: "Le Thuy Huy",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Manager",
   },
   {
@@ -320,7 +320,7 @@ export const users = [
     email: "lethuylinh@magicpost.com",
     password: "lethuylinh",
     fullname: "Le Thuy Linh",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Manager",
   },
   {
@@ -329,7 +329,7 @@ export const users = [
     email: "lethuyduong@magicpost.com",
     password: "lethuyduong",
     fullname: "Le Thuy Duong",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Manager",
   },
   {
@@ -338,7 +338,7 @@ export const users = [
     email: "lethuyngoc@magicpost.com",
     password: "lethuyngoc",
     fullname: "Le Thuy Ngoc",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Manager",
   },
   {
@@ -347,7 +347,7 @@ export const users = [
     email: "lethuyhoa@magicpost.com",
     password: "lethuyhoa",
     fullname: "Le Thuy Hoa",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Manager",
   },
   {
@@ -356,7 +356,7 @@ export const users = [
     email: "lethuy@magicpost.com",
     password: "lethuy",
     fullname: "Le Thuy ",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Manager",
   },
   {
@@ -365,7 +365,7 @@ export const users = [
     email: "lethanhanh@magicpost.com",
     password: "lethanhanh",
     fullname: "Le Thanh Anh",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Manager",
   },
   {
@@ -374,7 +374,7 @@ export const users = [
     email: "lethanhduc@magicpost.com",
     password: "lethanhduc",
     fullname: "Le Thanh Duc",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Manager",
   },
   {
@@ -383,7 +383,7 @@ export const users = [
     email: "lethanhhuy@magicpost.com",
     password: "lethanhhuy",
     fullname: "Le Thanh Huy",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Manager",
   },
   {
@@ -392,7 +392,7 @@ export const users = [
     email: "lethanhlinh@magicpost.com",
     password: "lethanhlinh",
     fullname: "Le Thanh Linh",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Manager",
   },
   {
@@ -401,7 +401,7 @@ export const users = [
     email: "lethanhduong@magicpost.com",
     password: "lethanhduong",
     fullname: "Le Thanh Duong",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Manager",
   },
   {
@@ -410,7 +410,7 @@ export const users = [
     email: "lethanhngoc@magicpost.com",
     password: "lethanhngoc",
     fullname: "Le Thanh Ngoc",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Manager",
   },
   {
@@ -419,7 +419,7 @@ export const users = [
     email: "lethanhhoa@magicpost.com",
     password: "lethanhhoa",
     fullname: "Le Thanh Hoa",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Manager",
   },
   {
@@ -428,7 +428,7 @@ export const users = [
     email: "lethanh@magicpost.com",
     password: "lethanh",
     fullname: "Le Thanh ",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Manager",
   },
   {
@@ -437,7 +437,7 @@ export const users = [
     email: "lethienanh@magicpost.com",
     password: "lethienanh",
     fullname: "Le Thien Anh",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Manager",
   },
   {
@@ -446,7 +446,7 @@ export const users = [
     email: "lethienduc@magicpost.com",
     password: "lethienduc",
     fullname: "Le Thien Duc",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Manager",
   },
   {
@@ -455,7 +455,7 @@ export const users = [
     email: "lethienhuy@magicpost.com",
     password: "lethienhuy",
     fullname: "Le Thien Huy",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Manager",
   },
   {
@@ -464,7 +464,7 @@ export const users = [
     email: "lethienlinh@magicpost.com",
     password: "lethienlinh",
     fullname: "Le Thien Linh",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Manager",
   },
   {
@@ -473,7 +473,7 @@ export const users = [
     email: "lethienduong@magicpost.com",
     password: "lethienduong",
     fullname: "Le Thien Duong",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Manager",
   },
   {
@@ -482,7 +482,7 @@ export const users = [
     email: "lethienngoc@magicpost.com",
     password: "lethienngoc",
     fullname: "Le Thien Ngoc",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Manager",
   },
   {
@@ -491,7 +491,7 @@ export const users = [
     email: "lethienhoa@magicpost.com",
     password: "lethienhoa",
     fullname: "Le Thien Hoa",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Manager",
   },
   {
@@ -500,7 +500,7 @@ export const users = [
     email: "lethien@magicpost.com",
     password: "lethien",
     fullname: "Le Thien ",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Manager",
   },
   {
@@ -509,7 +509,7 @@ export const users = [
     email: "letuananh@magicpost.com",
     password: "letuananh",
     fullname: "Le Tuan Anh",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Manager",
   },
   {
@@ -518,7 +518,7 @@ export const users = [
     email: "letuanduc@magicpost.com",
     password: "letuanduc",
     fullname: "Le Tuan Duc",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Manager",
   },
   {
@@ -527,7 +527,7 @@ export const users = [
     email: "letuanhuy@magicpost.com",
     password: "letuanhuy",
     fullname: "Le Tuan Huy",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Manager",
   },
   {
@@ -536,7 +536,7 @@ export const users = [
     email: "letuanlinh@magicpost.com",
     password: "letuanlinh",
     fullname: "Le Tuan Linh",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Manager",
   },
   {
@@ -2039,7 +2039,7 @@ export const users = [
     email: "nguyenthuyhuy@magicpost.com",
     password: "nguyenthuyhuy",
     fullname: "Nguyen Thuy Huy",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -2048,7 +2048,7 @@ export const users = [
     email: "nguyenthuylinh@magicpost.com",
     password: "nguyenthuylinh",
     fullname: "Nguyen Thuy Linh",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -2057,7 +2057,7 @@ export const users = [
     email: "nguyenthuyduong@magicpost.com",
     password: "nguyenthuyduong",
     fullname: "Nguyen Thuy Duong",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -2066,7 +2066,7 @@ export const users = [
     email: "nguyenthuyngoc@magicpost.com",
     password: "nguyenthuyngoc",
     fullname: "Nguyen Thuy Ngoc",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -2075,7 +2075,7 @@ export const users = [
     email: "nguyenthuyhoa@magicpost.com",
     password: "nguyenthuyhoa",
     fullname: "Nguyen Thuy Hoa",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -2084,7 +2084,7 @@ export const users = [
     email: "nguyenthuy@magicpost.com",
     password: "nguyenthuy",
     fullname: "Nguyen Thuy ",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -2093,7 +2093,7 @@ export const users = [
     email: "nguyenthanhanh@magicpost.com",
     password: "nguyenthanhanh",
     fullname: "Nguyen Thanh Anh",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -2102,7 +2102,7 @@ export const users = [
     email: "nguyenthanhduc@magicpost.com",
     password: "nguyenthanhduc",
     fullname: "Nguyen Thanh Duc",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -2111,7 +2111,7 @@ export const users = [
     email: "nguyenthanhhuy@magicpost.com",
     password: "nguyenthanhhuy",
     fullname: "Nguyen Thanh Huy",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -2120,7 +2120,7 @@ export const users = [
     email: "nguyenthanhlinh@magicpost.com",
     password: "nguyenthanhlinh",
     fullname: "Nguyen Thanh Linh",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -2129,7 +2129,7 @@ export const users = [
     email: "nguyenthanhduong@magicpost.com",
     password: "nguyenthanhduong",
     fullname: "Nguyen Thanh Duong",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -2138,7 +2138,7 @@ export const users = [
     email: "nguyenthanhngoc@magicpost.com",
     password: "nguyenthanhngoc",
     fullname: "Nguyen Thanh Ngoc",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -2147,7 +2147,7 @@ export const users = [
     email: "nguyenthanhhoa@magicpost.com",
     password: "nguyenthanhhoa",
     fullname: "Nguyen Thanh Hoa",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -2156,7 +2156,7 @@ export const users = [
     email: "nguyenthanh@magicpost.com",
     password: "nguyenthanh",
     fullname: "Nguyen Thanh ",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -2165,7 +2165,7 @@ export const users = [
     email: "nguyenthienanh@magicpost.com",
     password: "nguyenthienanh",
     fullname: "Nguyen Thien Anh",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -2174,7 +2174,7 @@ export const users = [
     email: "nguyenthienduc@magicpost.com",
     password: "nguyenthienduc",
     fullname: "Nguyen Thien Duc",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -2183,7 +2183,7 @@ export const users = [
     email: "nguyenthienhuy@magicpost.com",
     password: "nguyenthienhuy",
     fullname: "Nguyen Thien Huy",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -2192,7 +2192,7 @@ export const users = [
     email: "nguyenthienlinh@magicpost.com",
     password: "nguyenthienlinh",
     fullname: "Nguyen Thien Linh",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -2201,7 +2201,7 @@ export const users = [
     email: "nguyenthienduong@magicpost.com",
     password: "nguyenthienduong",
     fullname: "Nguyen Thien Duong",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -2210,7 +2210,7 @@ export const users = [
     email: "nguyenthienngoc@magicpost.com",
     password: "nguyenthienngoc",
     fullname: "Nguyen Thien Ngoc",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -2219,7 +2219,7 @@ export const users = [
     email: "nguyenthienhoa@magicpost.com",
     password: "nguyenthienhoa",
     fullname: "Nguyen Thien Hoa",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -2228,7 +2228,7 @@ export const users = [
     email: "nguyenthien@magicpost.com",
     password: "nguyenthien",
     fullname: "Nguyen Thien ",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -2237,7 +2237,7 @@ export const users = [
     email: "nguyentuananh@magicpost.com",
     password: "nguyentuananh",
     fullname: "Nguyen Tuan Anh",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -2246,7 +2246,7 @@ export const users = [
     email: "nguyentuanduc@magicpost.com",
     password: "nguyentuanduc",
     fullname: "Nguyen Tuan Duc",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -2255,7 +2255,7 @@ export const users = [
     email: "nguyentuanhuy@magicpost.com",
     password: "nguyentuanhuy",
     fullname: "Nguyen Tuan Huy",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -2264,7 +2264,7 @@ export const users = [
     email: "nguyentuanlinh@magicpost.com",
     password: "nguyentuanlinh",
     fullname: "Nguyen Tuan Linh",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -2273,7 +2273,7 @@ export const users = [
     email: "nguyentuanduong@magicpost.com",
     password: "nguyentuanduong",
     fullname: "Nguyen Tuan Duong",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -2282,7 +2282,7 @@ export const users = [
     email: "nguyentuanngoc@magicpost.com",
     password: "nguyentuanngoc",
     fullname: "Nguyen Tuan Ngoc",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -2291,7 +2291,7 @@ export const users = [
     email: "nguyentuanhoa@magicpost.com",
     password: "nguyentuanhoa",
     fullname: "Nguyen Tuan Hoa",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -2300,7 +2300,7 @@ export const users = [
     email: "nguyentuan@magicpost.com",
     password: "nguyentuan",
     fullname: "Nguyen Tuan ",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -2309,7 +2309,7 @@ export const users = [
     email: "hoangthianh@magicpost.com",
     password: "hoangthianh",
     fullname: "Hoang Thi Anh",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -2318,7 +2318,7 @@ export const users = [
     email: "hoangthiduc@magicpost.com",
     password: "hoangthiduc",
     fullname: "Hoang Thi Duc",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -2327,7 +2327,7 @@ export const users = [
     email: "hoangthihuy@magicpost.com",
     password: "hoangthihuy",
     fullname: "Hoang Thi Huy",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -2336,7 +2336,7 @@ export const users = [
     email: "hoangthilinh@magicpost.com",
     password: "hoangthilinh",
     fullname: "Hoang Thi Linh",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -2345,7 +2345,7 @@ export const users = [
     email: "hoangthiduong@magicpost.com",
     password: "hoangthiduong",
     fullname: "Hoang Thi Duong",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -2354,7 +2354,7 @@ export const users = [
     email: "hoangthingoc@magicpost.com",
     password: "hoangthingoc",
     fullname: "Hoang Thi Ngoc",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -2363,7 +2363,7 @@ export const users = [
     email: "hoangthihoa@magicpost.com",
     password: "hoangthihoa",
     fullname: "Hoang Thi Hoa",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -2372,7 +2372,7 @@ export const users = [
     email: "hoangthi@magicpost.com",
     password: "hoangthi",
     fullname: "Hoang Thi ",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -2381,7 +2381,7 @@ export const users = [
     email: "hoangvananh@magicpost.com",
     password: "hoangvananh",
     fullname: "Hoang Van Anh",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -2390,7 +2390,7 @@ export const users = [
     email: "hoangvanduc@magicpost.com",
     password: "hoangvanduc",
     fullname: "Hoang Van Duc",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -2399,7 +2399,7 @@ export const users = [
     email: "hoangvanhuy@magicpost.com",
     password: "hoangvanhuy",
     fullname: "Hoang Van Huy",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -2408,7 +2408,7 @@ export const users = [
     email: "hoangvanlinh@magicpost.com",
     password: "hoangvanlinh",
     fullname: "Hoang Van Linh",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -2417,7 +2417,7 @@ export const users = [
     email: "hoangvanduong@magicpost.com",
     password: "hoangvanduong",
     fullname: "Hoang Van Duong",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -2426,7 +2426,7 @@ export const users = [
     email: "hoangvanngoc@magicpost.com",
     password: "hoangvanngoc",
     fullname: "Hoang Van Ngoc",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -2435,7 +2435,7 @@ export const users = [
     email: "hoangvanhoa@magicpost.com",
     password: "hoangvanhoa",
     fullname: "Hoang Van Hoa",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -2444,7 +2444,7 @@ export const users = [
     email: "hoangvan@magicpost.com",
     password: "hoangvan",
     fullname: "Hoang Van ",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -2453,7 +2453,7 @@ export const users = [
     email: "hoangquanganh@magicpost.com",
     password: "hoangquanganh",
     fullname: "Hoang Quang Anh",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -2462,7 +2462,7 @@ export const users = [
     email: "hoangquangduc@magicpost.com",
     password: "hoangquangduc",
     fullname: "Hoang Quang Duc",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -2471,7 +2471,7 @@ export const users = [
     email: "hoangquanghuy@magicpost.com",
     password: "hoangquanghuy",
     fullname: "Hoang Quang Huy",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -2480,7 +2480,7 @@ export const users = [
     email: "hoangquanglinh@magicpost.com",
     password: "hoangquanglinh",
     fullname: "Hoang Quang Linh",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -2489,7 +2489,7 @@ export const users = [
     email: "hoangquangduong@magicpost.com",
     password: "hoangquangduong",
     fullname: "Hoang Quang Duong",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -2498,7 +2498,7 @@ export const users = [
     email: "hoangquangngoc@magicpost.com",
     password: "hoangquangngoc",
     fullname: "Hoang Quang Ngoc",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -2507,7 +2507,7 @@ export const users = [
     email: "hoangquanghoa@magicpost.com",
     password: "hoangquanghoa",
     fullname: "Hoang Quang Hoa",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -2516,7 +2516,7 @@ export const users = [
     email: "hoangquang@magicpost.com",
     password: "hoangquang",
     fullname: "Hoang Quang ",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -2525,7 +2525,7 @@ export const users = [
     email: "hoangducanh@magicpost.com",
     password: "hoangducanh",
     fullname: "Hoang Duc Anh",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -2534,7 +2534,7 @@ export const users = [
     email: "hoangducduc@magicpost.com",
     password: "hoangducduc",
     fullname: "Hoang Duc Duc",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -2543,7 +2543,7 @@ export const users = [
     email: "hoangduchuy@magicpost.com",
     password: "hoangduchuy",
     fullname: "Hoang Duc Huy",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -2552,7 +2552,7 @@ export const users = [
     email: "hoangduclinh@magicpost.com",
     password: "hoangduclinh",
     fullname: "Hoang Duc Linh",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -2561,7 +2561,7 @@ export const users = [
     email: "hoangducduong@magicpost.com",
     password: "hoangducduong",
     fullname: "Hoang Duc Duong",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -2570,7 +2570,7 @@ export const users = [
     email: "hoangducngoc@magicpost.com",
     password: "hoangducngoc",
     fullname: "Hoang Duc Ngoc",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -2579,7 +2579,7 @@ export const users = [
     email: "hoangduchoa@magicpost.com",
     password: "hoangduchoa",
     fullname: "Hoang Duc Hoa",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -2588,7 +2588,7 @@ export const users = [
     email: "hoangduc@magicpost.com",
     password: "hoangduc",
     fullname: "Hoang Duc ",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -2597,7 +2597,7 @@ export const users = [
     email: "hoangthuyanh@magicpost.com",
     password: "hoangthuyanh",
     fullname: "Hoang Thuy Anh",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -2606,7 +2606,7 @@ export const users = [
     email: "hoangthuyduc@magicpost.com",
     password: "hoangthuyduc",
     fullname: "Hoang Thuy Duc",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -2615,7 +2615,7 @@ export const users = [
     email: "hoangthuyhuy@magicpost.com",
     password: "hoangthuyhuy",
     fullname: "Hoang Thuy Huy",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -2624,7 +2624,7 @@ export const users = [
     email: "hoangthuylinh@magicpost.com",
     password: "hoangthuylinh",
     fullname: "Hoang Thuy Linh",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -2633,7 +2633,7 @@ export const users = [
     email: "hoangthuyduong@magicpost.com",
     password: "hoangthuyduong",
     fullname: "Hoang Thuy Duong",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -2642,7 +2642,7 @@ export const users = [
     email: "hoangthuyngoc@magicpost.com",
     password: "hoangthuyngoc",
     fullname: "Hoang Thuy Ngoc",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -2651,7 +2651,7 @@ export const users = [
     email: "hoangthuyhoa@magicpost.com",
     password: "hoangthuyhoa",
     fullname: "Hoang Thuy Hoa",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -2660,7 +2660,7 @@ export const users = [
     email: "hoangthuy@magicpost.com",
     password: "hoangthuy",
     fullname: "Hoang Thuy ",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -2669,7 +2669,7 @@ export const users = [
     email: "hoangthanhanh@magicpost.com",
     password: "hoangthanhanh",
     fullname: "Hoang Thanh Anh",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -2678,7 +2678,7 @@ export const users = [
     email: "hoangthanhduc@magicpost.com",
     password: "hoangthanhduc",
     fullname: "Hoang Thanh Duc",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -2687,7 +2687,7 @@ export const users = [
     email: "hoangthanhhuy@magicpost.com",
     password: "hoangthanhhuy",
     fullname: "Hoang Thanh Huy",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -2696,7 +2696,7 @@ export const users = [
     email: "hoangthanhlinh@magicpost.com",
     password: "hoangthanhlinh",
     fullname: "Hoang Thanh Linh",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -2705,7 +2705,7 @@ export const users = [
     email: "hoangthanhduong@magicpost.com",
     password: "hoangthanhduong",
     fullname: "Hoang Thanh Duong",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -2714,7 +2714,7 @@ export const users = [
     email: "hoangthanhngoc@magicpost.com",
     password: "hoangthanhngoc",
     fullname: "Hoang Thanh Ngoc",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -2723,7 +2723,7 @@ export const users = [
     email: "hoangthanhhoa@magicpost.com",
     password: "hoangthanhhoa",
     fullname: "Hoang Thanh Hoa",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -2732,7 +2732,7 @@ export const users = [
     email: "hoangthanh@magicpost.com",
     password: "hoangthanh",
     fullname: "Hoang Thanh ",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -2741,7 +2741,7 @@ export const users = [
     email: "hoangthienanh@magicpost.com",
     password: "hoangthienanh",
     fullname: "Hoang Thien Anh",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -2750,7 +2750,7 @@ export const users = [
     email: "hoangthienduc@magicpost.com",
     password: "hoangthienduc",
     fullname: "Hoang Thien Duc",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -2759,7 +2759,7 @@ export const users = [
     email: "hoangthienhuy@magicpost.com",
     password: "hoangthienhuy",
     fullname: "Hoang Thien Huy",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -2768,7 +2768,7 @@ export const users = [
     email: "hoangthienlinh@magicpost.com",
     password: "hoangthienlinh",
     fullname: "Hoang Thien Linh",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -2777,7 +2777,7 @@ export const users = [
     email: "hoangthienduong@magicpost.com",
     password: "hoangthienduong",
     fullname: "Hoang Thien Duong",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -2786,7 +2786,7 @@ export const users = [
     email: "hoangthienngoc@magicpost.com",
     password: "hoangthienngoc",
     fullname: "Hoang Thien Ngoc",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -2795,7 +2795,7 @@ export const users = [
     email: "hoangthienhoa@magicpost.com",
     password: "hoangthienhoa",
     fullname: "Hoang Thien Hoa",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -2804,7 +2804,7 @@ export const users = [
     email: "hoangthien@magicpost.com",
     password: "hoangthien",
     fullname: "Hoang Thien ",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -2813,7 +2813,7 @@ export const users = [
     email: "hoangtuananh@magicpost.com",
     password: "hoangtuananh",
     fullname: "Hoang Tuan Anh",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -2822,7 +2822,7 @@ export const users = [
     email: "hoangtuanduc@magicpost.com",
     password: "hoangtuanduc",
     fullname: "Hoang Tuan Duc",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -2831,7 +2831,7 @@ export const users = [
     email: "hoangtuanhuy@magicpost.com",
     password: "hoangtuanhuy",
     fullname: "Hoang Tuan Huy",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -2840,7 +2840,7 @@ export const users = [
     email: "hoangtuanlinh@magicpost.com",
     password: "hoangtuanlinh",
     fullname: "Hoang Tuan Linh",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -2849,7 +2849,7 @@ export const users = [
     email: "hoangtuanduong@magicpost.com",
     password: "hoangtuanduong",
     fullname: "Hoang Tuan Duong",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -2858,7 +2858,7 @@ export const users = [
     email: "hoangtuanngoc@magicpost.com",
     password: "hoangtuanngoc",
     fullname: "Hoang Tuan Ngoc",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -2867,7 +2867,7 @@ export const users = [
     email: "hoangtuanhoa@magicpost.com",
     password: "hoangtuanhoa",
     fullname: "Hoang Tuan Hoa",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -2876,7 +2876,7 @@ export const users = [
     email: "hoangtuan@magicpost.com",
     password: "hoangtuan",
     fullname: "Hoang Tuan ",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -2885,7 +2885,7 @@ export const users = [
     email: "huynhthianh@magicpost.com",
     password: "huynhthianh",
     fullname: "Huynh Thi Anh",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -2894,7 +2894,7 @@ export const users = [
     email: "huynhthiduc@magicpost.com",
     password: "huynhthiduc",
     fullname: "Huynh Thi Duc",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -2903,7 +2903,7 @@ export const users = [
     email: "huynhthihuy@magicpost.com",
     password: "huynhthihuy",
     fullname: "Huynh Thi Huy",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -2912,7 +2912,7 @@ export const users = [
     email: "huynhthilinh@magicpost.com",
     password: "huynhthilinh",
     fullname: "Huynh Thi Linh",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -2921,7 +2921,7 @@ export const users = [
     email: "huynhthiduong@magicpost.com",
     password: "huynhthiduong",
     fullname: "Huynh Thi Duong",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -2930,7 +2930,7 @@ export const users = [
     email: "huynhthingoc@magicpost.com",
     password: "huynhthingoc",
     fullname: "Huynh Thi Ngoc",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -2939,7 +2939,7 @@ export const users = [
     email: "huynhthihoa@magicpost.com",
     password: "huynhthihoa",
     fullname: "Huynh Thi Hoa",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -2948,7 +2948,7 @@ export const users = [
     email: "huynhthi@magicpost.com",
     password: "huynhthi",
     fullname: "Huynh Thi ",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -2957,7 +2957,7 @@ export const users = [
     email: "huynhvananh@magicpost.com",
     password: "huynhvananh",
     fullname: "Huynh Van Anh",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -2966,7 +2966,7 @@ export const users = [
     email: "huynhvanduc@magicpost.com",
     password: "huynhvanduc",
     fullname: "Huynh Van Duc",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -2975,7 +2975,7 @@ export const users = [
     email: "huynhvanhuy@magicpost.com",
     password: "huynhvanhuy",
     fullname: "Huynh Van Huy",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -2984,7 +2984,7 @@ export const users = [
     email: "huynhvanlinh@magicpost.com",
     password: "huynhvanlinh",
     fullname: "Huynh Van Linh",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -2993,7 +2993,7 @@ export const users = [
     email: "huynhvanduong@magicpost.com",
     password: "huynhvanduong",
     fullname: "Huynh Van Duong",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -3002,7 +3002,7 @@ export const users = [
     email: "huynhvanngoc@magicpost.com",
     password: "huynhvanngoc",
     fullname: "Huynh Van Ngoc",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -3011,7 +3011,7 @@ export const users = [
     email: "huynhvanhoa@magicpost.com",
     password: "huynhvanhoa",
     fullname: "Huynh Van Hoa",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -3020,7 +3020,7 @@ export const users = [
     email: "huynhvan@magicpost.com",
     password: "huynhvan",
     fullname: "Huynh Van ",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -3029,7 +3029,7 @@ export const users = [
     email: "huynhquanganh@magicpost.com",
     password: "huynhquanganh",
     fullname: "Huynh Quang Anh",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -3038,7 +3038,7 @@ export const users = [
     email: "huynhquangduc@magicpost.com",
     password: "huynhquangduc",
     fullname: "Huynh Quang Duc",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -3047,7 +3047,7 @@ export const users = [
     email: "huynhquanghuy@magicpost.com",
     password: "huynhquanghuy",
     fullname: "Huynh Quang Huy",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -3056,7 +3056,7 @@ export const users = [
     email: "huynhquanglinh@magicpost.com",
     password: "huynhquanglinh",
     fullname: "Huynh Quang Linh",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -3065,7 +3065,7 @@ export const users = [
     email: "huynhquangduong@magicpost.com",
     password: "huynhquangduong",
     fullname: "Huynh Quang Duong",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -3074,7 +3074,7 @@ export const users = [
     email: "huynhquangngoc@magicpost.com",
     password: "huynhquangngoc",
     fullname: "Huynh Quang Ngoc",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -3083,7 +3083,7 @@ export const users = [
     email: "huynhquanghoa@magicpost.com",
     password: "huynhquanghoa",
     fullname: "Huynh Quang Hoa",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -3092,7 +3092,7 @@ export const users = [
     email: "huynhquang@magicpost.com",
     password: "huynhquang",
     fullname: "Huynh Quang ",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -3101,7 +3101,7 @@ export const users = [
     email: "huynhducanh@magicpost.com",
     password: "huynhducanh",
     fullname: "Huynh Duc Anh",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -3110,7 +3110,7 @@ export const users = [
     email: "huynhducduc@magicpost.com",
     password: "huynhducduc",
     fullname: "Huynh Duc Duc",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -3119,7 +3119,7 @@ export const users = [
     email: "huynhduchuy@magicpost.com",
     password: "huynhduchuy",
     fullname: "Huynh Duc Huy",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -3128,7 +3128,7 @@ export const users = [
     email: "huynhduclinh@magicpost.com",
     password: "huynhduclinh",
     fullname: "Huynh Duc Linh",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -3137,7 +3137,7 @@ export const users = [
     email: "huynhducduong@magicpost.com",
     password: "huynhducduong",
     fullname: "Huynh Duc Duong",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -3146,7 +3146,7 @@ export const users = [
     email: "huynhducngoc@magicpost.com",
     password: "huynhducngoc",
     fullname: "Huynh Duc Ngoc",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -3155,7 +3155,7 @@ export const users = [
     email: "huynhduchoa@magicpost.com",
     password: "huynhduchoa",
     fullname: "Huynh Duc Hoa",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -3164,7 +3164,7 @@ export const users = [
     email: "huynhduc@magicpost.com",
     password: "huynhduc",
     fullname: "Huynh Duc ",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -3173,7 +3173,7 @@ export const users = [
     email: "huynhthuyanh@magicpost.com",
     password: "huynhthuyanh",
     fullname: "Huynh Thuy Anh",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -3182,7 +3182,7 @@ export const users = [
     email: "huynhthuyduc@magicpost.com",
     password: "huynhthuyduc",
     fullname: "Huynh Thuy Duc",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -3191,7 +3191,7 @@ export const users = [
     email: "huynhthuyhuy@magicpost.com",
     password: "huynhthuyhuy",
     fullname: "Huynh Thuy Huy",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -3200,7 +3200,7 @@ export const users = [
     email: "huynhthuylinh@magicpost.com",
     password: "huynhthuylinh",
     fullname: "Huynh Thuy Linh",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -3209,7 +3209,7 @@ export const users = [
     email: "huynhthuyduong@magicpost.com",
     password: "huynhthuyduong",
     fullname: "Huynh Thuy Duong",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -3218,7 +3218,7 @@ export const users = [
     email: "huynhthuyngoc@magicpost.com",
     password: "huynhthuyngoc",
     fullname: "Huynh Thuy Ngoc",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -3227,7 +3227,7 @@ export const users = [
     email: "huynhthuyhoa@magicpost.com",
     password: "huynhthuyhoa",
     fullname: "Huynh Thuy Hoa",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -3236,7 +3236,7 @@ export const users = [
     email: "huynhthuy@magicpost.com",
     password: "huynhthuy",
     fullname: "Huynh Thuy ",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -3245,7 +3245,7 @@ export const users = [
     email: "huynhthanhanh@magicpost.com",
     password: "huynhthanhanh",
     fullname: "Huynh Thanh Anh",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -3254,7 +3254,7 @@ export const users = [
     email: "huynhthanhduc@magicpost.com",
     password: "huynhthanhduc",
     fullname: "Huynh Thanh Duc",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -3263,7 +3263,7 @@ export const users = [
     email: "huynhthanhhuy@magicpost.com",
     password: "huynhthanhhuy",
     fullname: "Huynh Thanh Huy",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -3272,7 +3272,7 @@ export const users = [
     email: "huynhthanhlinh@magicpost.com",
     password: "huynhthanhlinh",
     fullname: "Huynh Thanh Linh",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -3281,7 +3281,7 @@ export const users = [
     email: "huynhthanhduong@magicpost.com",
     password: "huynhthanhduong",
     fullname: "Huynh Thanh Duong",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -3290,7 +3290,7 @@ export const users = [
     email: "huynhthanhngoc@magicpost.com",
     password: "huynhthanhngoc",
     fullname: "Huynh Thanh Ngoc",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -3299,7 +3299,7 @@ export const users = [
     email: "huynhthanhhoa@magicpost.com",
     password: "huynhthanhhoa",
     fullname: "Huynh Thanh Hoa",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -3308,7 +3308,7 @@ export const users = [
     email: "huynhthanh@magicpost.com",
     password: "huynhthanh",
     fullname: "Huynh Thanh ",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -3317,7 +3317,7 @@ export const users = [
     email: "huynhthienanh@magicpost.com",
     password: "huynhthienanh",
     fullname: "Huynh Thien Anh",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -3326,7 +3326,7 @@ export const users = [
     email: "huynhthienduc@magicpost.com",
     password: "huynhthienduc",
     fullname: "Huynh Thien Duc",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -3335,7 +3335,7 @@ export const users = [
     email: "huynhthienhuy@magicpost.com",
     password: "huynhthienhuy",
     fullname: "Huynh Thien Huy",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -3344,7 +3344,7 @@ export const users = [
     email: "huynhthienlinh@magicpost.com",
     password: "huynhthienlinh",
     fullname: "Huynh Thien Linh",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -3353,7 +3353,7 @@ export const users = [
     email: "huynhthienduong@magicpost.com",
     password: "huynhthienduong",
     fullname: "Huynh Thien Duong",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -3362,7 +3362,7 @@ export const users = [
     email: "huynhthienngoc@magicpost.com",
     password: "huynhthienngoc",
     fullname: "Huynh Thien Ngoc",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -3371,7 +3371,7 @@ export const users = [
     email: "huynhthienhoa@magicpost.com",
     password: "huynhthienhoa",
     fullname: "Huynh Thien Hoa",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -3380,7 +3380,7 @@ export const users = [
     email: "huynhthien@magicpost.com",
     password: "huynhthien",
     fullname: "Huynh Thien ",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -3389,7 +3389,7 @@ export const users = [
     email: "huynhtuananh@magicpost.com",
     password: "huynhtuananh",
     fullname: "Huynh Tuan Anh",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -3398,7 +3398,7 @@ export const users = [
     email: "huynhtuanduc@magicpost.com",
     password: "huynhtuanduc",
     fullname: "Huynh Tuan Duc",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -3407,7 +3407,7 @@ export const users = [
     email: "huynhtuanhuy@magicpost.com",
     password: "huynhtuanhuy",
     fullname: "Huynh Tuan Huy",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -3416,7 +3416,7 @@ export const users = [
     email: "huynhtuanlinh@magicpost.com",
     password: "huynhtuanlinh",
     fullname: "Huynh Tuan Linh",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -3425,7 +3425,7 @@ export const users = [
     email: "huynhtuanduong@magicpost.com",
     password: "huynhtuanduong",
     fullname: "Huynh Tuan Duong",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -3434,7 +3434,7 @@ export const users = [
     email: "huynhtuanngoc@magicpost.com",
     password: "huynhtuanngoc",
     fullname: "Huynh Tuan Ngoc",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -3443,7 +3443,7 @@ export const users = [
     email: "huynhtuanhoa@magicpost.com",
     password: "huynhtuanhoa",
     fullname: "Huynh Tuan Hoa",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -3452,7 +3452,7 @@ export const users = [
     email: "huynhtuan@magicpost.com",
     password: "huynhtuan",
     fullname: "Huynh Tuan ",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -3461,7 +3461,7 @@ export const users = [
     email: "phanthianh@magicpost.com",
     password: "phanthianh",
     fullname: "Phan Thi Anh",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -3470,7 +3470,7 @@ export const users = [
     email: "phanthiduc@magicpost.com",
     password: "phanthiduc",
     fullname: "Phan Thi Duc",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -3479,7 +3479,7 @@ export const users = [
     email: "phanthihuy@magicpost.com",
     password: "phanthihuy",
     fullname: "Phan Thi Huy",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -3488,7 +3488,7 @@ export const users = [
     email: "phanthilinh@magicpost.com",
     password: "phanthilinh",
     fullname: "Phan Thi Linh",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -3497,7 +3497,7 @@ export const users = [
     email: "phanthiduong@magicpost.com",
     password: "phanthiduong",
     fullname: "Phan Thi Duong",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -3506,7 +3506,7 @@ export const users = [
     email: "phanthingoc@magicpost.com",
     password: "phanthingoc",
     fullname: "Phan Thi Ngoc",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -3515,7 +3515,7 @@ export const users = [
     email: "phanthihoa@magicpost.com",
     password: "phanthihoa",
     fullname: "Phan Thi Hoa",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -3524,7 +3524,7 @@ export const users = [
     email: "phanthi@magicpost.com",
     password: "phanthi",
     fullname: "Phan Thi ",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -3533,7 +3533,7 @@ export const users = [
     email: "phanvananh@magicpost.com",
     password: "phanvananh",
     fullname: "Phan Van Anh",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -3542,7 +3542,7 @@ export const users = [
     email: "phanvanduc@magicpost.com",
     password: "phanvanduc",
     fullname: "Phan Van Duc",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -3551,7 +3551,7 @@ export const users = [
     email: "phanvanhuy@magicpost.com",
     password: "phanvanhuy",
     fullname: "Phan Van Huy",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -3560,7 +3560,7 @@ export const users = [
     email: "phanvanlinh@magicpost.com",
     password: "phanvanlinh",
     fullname: "Phan Van Linh",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -3569,7 +3569,7 @@ export const users = [
     email: "phanvanduong@magicpost.com",
     password: "phanvanduong",
     fullname: "Phan Van Duong",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -3578,7 +3578,7 @@ export const users = [
     email: "phanvanngoc@magicpost.com",
     password: "phanvanngoc",
     fullname: "Phan Van Ngoc",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -3587,7 +3587,7 @@ export const users = [
     email: "phanvanhoa@magicpost.com",
     password: "phanvanhoa",
     fullname: "Phan Van Hoa",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -3596,7 +3596,7 @@ export const users = [
     email: "phanvan@magicpost.com",
     password: "phanvan",
     fullname: "Phan Van ",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -3605,7 +3605,7 @@ export const users = [
     email: "phanquanganh@magicpost.com",
     password: "phanquanganh",
     fullname: "Phan Quang Anh",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -3614,7 +3614,7 @@ export const users = [
     email: "phanquangduc@magicpost.com",
     password: "phanquangduc",
     fullname: "Phan Quang Duc",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -3623,7 +3623,7 @@ export const users = [
     email: "phanquanghuy@magicpost.com",
     password: "phanquanghuy",
     fullname: "Phan Quang Huy",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -3632,7 +3632,7 @@ export const users = [
     email: "phanquanglinh@magicpost.com",
     password: "phanquanglinh",
     fullname: "Phan Quang Linh",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -3641,7 +3641,7 @@ export const users = [
     email: "phanquangduong@magicpost.com",
     password: "phanquangduong",
     fullname: "Phan Quang Duong",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -3650,7 +3650,7 @@ export const users = [
     email: "phanquangngoc@magicpost.com",
     password: "phanquangngoc",
     fullname: "Phan Quang Ngoc",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -3659,7 +3659,7 @@ export const users = [
     email: "phanquanghoa@magicpost.com",
     password: "phanquanghoa",
     fullname: "Phan Quang Hoa",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -3668,7 +3668,7 @@ export const users = [
     email: "phanquang@magicpost.com",
     password: "phanquang",
     fullname: "Phan Quang ",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -3677,7 +3677,7 @@ export const users = [
     email: "phanducanh@magicpost.com",
     password: "phanducanh",
     fullname: "Phan Duc Anh",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -3686,7 +3686,7 @@ export const users = [
     email: "phanducduc@magicpost.com",
     password: "phanducduc",
     fullname: "Phan Duc Duc",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -3695,7 +3695,7 @@ export const users = [
     email: "phanduchuy@magicpost.com",
     password: "phanduchuy",
     fullname: "Phan Duc Huy",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -3704,7 +3704,7 @@ export const users = [
     email: "phanduclinh@magicpost.com",
     password: "phanduclinh",
     fullname: "Phan Duc Linh",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -3713,7 +3713,7 @@ export const users = [
     email: "phanducduong@magicpost.com",
     password: "phanducduong",
     fullname: "Phan Duc Duong",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -3722,7 +3722,7 @@ export const users = [
     email: "phanducngoc@magicpost.com",
     password: "phanducngoc",
     fullname: "Phan Duc Ngoc",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -3731,7 +3731,7 @@ export const users = [
     email: "phanduchoa@magicpost.com",
     password: "phanduchoa",
     fullname: "Phan Duc Hoa",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -3740,7 +3740,7 @@ export const users = [
     email: "phanduc@magicpost.com",
     password: "phanduc",
     fullname: "Phan Duc ",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -3749,7 +3749,7 @@ export const users = [
     email: "phanthuyanh@magicpost.com",
     password: "phanthuyanh",
     fullname: "Phan Thuy Anh",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -3758,7 +3758,7 @@ export const users = [
     email: "phanthuyduc@magicpost.com",
     password: "phanthuyduc",
     fullname: "Phan Thuy Duc",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -3767,7 +3767,7 @@ export const users = [
     email: "phanthuyhuy@magicpost.com",
     password: "phanthuyhuy",
     fullname: "Phan Thuy Huy",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -3776,7 +3776,7 @@ export const users = [
     email: "phanthuylinh@magicpost.com",
     password: "phanthuylinh",
     fullname: "Phan Thuy Linh",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -3785,7 +3785,7 @@ export const users = [
     email: "phanthuyduong@magicpost.com",
     password: "phanthuyduong",
     fullname: "Phan Thuy Duong",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -3794,7 +3794,7 @@ export const users = [
     email: "phanthuyngoc@magicpost.com",
     password: "phanthuyngoc",
     fullname: "Phan Thuy Ngoc",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -3803,7 +3803,7 @@ export const users = [
     email: "phanthuyhoa@magicpost.com",
     password: "phanthuyhoa",
     fullname: "Phan Thuy Hoa",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -3812,7 +3812,7 @@ export const users = [
     email: "phanthuy@magicpost.com",
     password: "phanthuy",
     fullname: "Phan Thuy ",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -3821,7 +3821,7 @@ export const users = [
     email: "phanthanhanh@magicpost.com",
     password: "phanthanhanh",
     fullname: "Phan Thanh Anh",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -3830,7 +3830,7 @@ export const users = [
     email: "phanthanhduc@magicpost.com",
     password: "phanthanhduc",
     fullname: "Phan Thanh Duc",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -3839,7 +3839,7 @@ export const users = [
     email: "phanthanhhuy@magicpost.com",
     password: "phanthanhhuy",
     fullname: "Phan Thanh Huy",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -3848,7 +3848,7 @@ export const users = [
     email: "phanthanhlinh@magicpost.com",
     password: "phanthanhlinh",
     fullname: "Phan Thanh Linh",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -3857,7 +3857,7 @@ export const users = [
     email: "phanthanhduong@magicpost.com",
     password: "phanthanhduong",
     fullname: "Phan Thanh Duong",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -3866,7 +3866,7 @@ export const users = [
     email: "phanthanhngoc@magicpost.com",
     password: "phanthanhngoc",
     fullname: "Phan Thanh Ngoc",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -3875,7 +3875,7 @@ export const users = [
     email: "phanthanhhoa@magicpost.com",
     password: "phanthanhhoa",
     fullname: "Phan Thanh Hoa",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -3884,7 +3884,7 @@ export const users = [
     email: "phanthanh@magicpost.com",
     password: "phanthanh",
     fullname: "Phan Thanh ",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -3893,7 +3893,7 @@ export const users = [
     email: "phanthienanh@magicpost.com",
     password: "phanthienanh",
     fullname: "Phan Thien Anh",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -3902,7 +3902,7 @@ export const users = [
     email: "phanthienduc@magicpost.com",
     password: "phanthienduc",
     fullname: "Phan Thien Duc",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -3911,7 +3911,7 @@ export const users = [
     email: "phanthienhuy@magicpost.com",
     password: "phanthienhuy",
     fullname: "Phan Thien Huy",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -3920,7 +3920,7 @@ export const users = [
     email: "phanthienlinh@magicpost.com",
     password: "phanthienlinh",
     fullname: "Phan Thien Linh",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -3929,7 +3929,7 @@ export const users = [
     email: "phanthienduong@magicpost.com",
     password: "phanthienduong",
     fullname: "Phan Thien Duong",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -3938,7 +3938,7 @@ export const users = [
     email: "phanthienngoc@magicpost.com",
     password: "phanthienngoc",
     fullname: "Phan Thien Ngoc",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -3947,7 +3947,7 @@ export const users = [
     email: "phanthienhoa@magicpost.com",
     password: "phanthienhoa",
     fullname: "Phan Thien Hoa",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -3956,7 +3956,7 @@ export const users = [
     email: "phanthien@magicpost.com",
     password: "phanthien",
     fullname: "Phan Thien ",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -3965,7 +3965,7 @@ export const users = [
     email: "phantuananh@magicpost.com",
     password: "phantuananh",
     fullname: "Phan Tuan Anh",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -3974,7 +3974,7 @@ export const users = [
     email: "phantuanduc@magicpost.com",
     password: "phantuanduc",
     fullname: "Phan Tuan Duc",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -3983,7 +3983,7 @@ export const users = [
     email: "phantuanhuy@magicpost.com",
     password: "phantuanhuy",
     fullname: "Phan Tuan Huy",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -3992,7 +3992,7 @@ export const users = [
     email: "phantuanlinh@magicpost.com",
     password: "phantuanlinh",
     fullname: "Phan Tuan Linh",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -4001,7 +4001,7 @@ export const users = [
     email: "phantuanduong@magicpost.com",
     password: "phantuanduong",
     fullname: "Phan Tuan Duong",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -4010,7 +4010,7 @@ export const users = [
     email: "phantuanngoc@magicpost.com",
     password: "phantuanngoc",
     fullname: "Phan Tuan Ngoc",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -4019,7 +4019,7 @@ export const users = [
     email: "phantuanhoa@magicpost.com",
     password: "phantuanhoa",
     fullname: "Phan Tuan Hoa",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -4028,7 +4028,7 @@ export const users = [
     email: "phantuan@magicpost.com",
     password: "phantuan",
     fullname: "Phan Tuan ",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -4037,7 +4037,7 @@ export const users = [
     email: "vuthianh@magicpost.com",
     password: "vuthianh",
     fullname: "Vu Thi Anh",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -4046,7 +4046,7 @@ export const users = [
     email: "vuthiduc@magicpost.com",
     password: "vuthiduc",
     fullname: "Vu Thi Duc",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -4055,7 +4055,7 @@ export const users = [
     email: "vuthihuy@magicpost.com",
     password: "vuthihuy",
     fullname: "Vu Thi Huy",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -4064,7 +4064,7 @@ export const users = [
     email: "vuthilinh@magicpost.com",
     password: "vuthilinh",
     fullname: "Vu Thi Linh",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -4073,7 +4073,7 @@ export const users = [
     email: "vuthiduong@magicpost.com",
     password: "vuthiduong",
     fullname: "Vu Thi Duong",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -4082,7 +4082,7 @@ export const users = [
     email: "vuthingoc@magicpost.com",
     password: "vuthingoc",
     fullname: "Vu Thi Ngoc",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -4091,7 +4091,7 @@ export const users = [
     email: "vuthihoa@magicpost.com",
     password: "vuthihoa",
     fullname: "Vu Thi Hoa",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -4100,7 +4100,7 @@ export const users = [
     email: "vuthi@magicpost.com",
     password: "vuthi",
     fullname: "Vu Thi ",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -4109,7 +4109,7 @@ export const users = [
     email: "vuvananh@magicpost.com",
     password: "vuvananh",
     fullname: "Vu Van Anh",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -4118,7 +4118,7 @@ export const users = [
     email: "vuvanduc@magicpost.com",
     password: "vuvanduc",
     fullname: "Vu Van Duc",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -4127,7 +4127,7 @@ export const users = [
     email: "vuvanhuy@magicpost.com",
     password: "vuvanhuy",
     fullname: "Vu Van Huy",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -4136,7 +4136,7 @@ export const users = [
     email: "vuvanlinh@magicpost.com",
     password: "vuvanlinh",
     fullname: "Vu Van Linh",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -4145,7 +4145,7 @@ export const users = [
     email: "vuvanduong@magicpost.com",
     password: "vuvanduong",
     fullname: "Vu Van Duong",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -4154,7 +4154,7 @@ export const users = [
     email: "vuvanngoc@magicpost.com",
     password: "vuvanngoc",
     fullname: "Vu Van Ngoc",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -4163,7 +4163,7 @@ export const users = [
     email: "vuvanhoa@magicpost.com",
     password: "vuvanhoa",
     fullname: "Vu Van Hoa",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -4172,7 +4172,7 @@ export const users = [
     email: "vuvan@magicpost.com",
     password: "vuvan",
     fullname: "Vu Van ",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -4181,7 +4181,7 @@ export const users = [
     email: "vuquanganh@magicpost.com",
     password: "vuquanganh",
     fullname: "Vu Quang Anh",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -4190,7 +4190,7 @@ export const users = [
     email: "vuquangduc@magicpost.com",
     password: "vuquangduc",
     fullname: "Vu Quang Duc",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -4199,7 +4199,7 @@ export const users = [
     email: "vuquanghuy@magicpost.com",
     password: "vuquanghuy",
     fullname: "Vu Quang Huy",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -4208,7 +4208,7 @@ export const users = [
     email: "vuquanglinh@magicpost.com",
     password: "vuquanglinh",
     fullname: "Vu Quang Linh",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -4217,7 +4217,7 @@ export const users = [
     email: "vuquangduong@magicpost.com",
     password: "vuquangduong",
     fullname: "Vu Quang Duong",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -4226,7 +4226,7 @@ export const users = [
     email: "vuquangngoc@magicpost.com",
     password: "vuquangngoc",
     fullname: "Vu Quang Ngoc",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -4235,7 +4235,7 @@ export const users = [
     email: "vuquanghoa@magicpost.com",
     password: "vuquanghoa",
     fullname: "Vu Quang Hoa",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -4244,7 +4244,7 @@ export const users = [
     email: "vuquang@magicpost.com",
     password: "vuquang",
     fullname: "Vu Quang ",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -4253,7 +4253,7 @@ export const users = [
     email: "vuducanh@magicpost.com",
     password: "vuducanh",
     fullname: "Vu Duc Anh",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -4262,7 +4262,7 @@ export const users = [
     email: "vuducduc@magicpost.com",
     password: "vuducduc",
     fullname: "Vu Duc Duc",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -4271,7 +4271,7 @@ export const users = [
     email: "vuduchuy@magicpost.com",
     password: "vuduchuy",
     fullname: "Vu Duc Huy",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -4280,7 +4280,7 @@ export const users = [
     email: "vuduclinh@magicpost.com",
     password: "vuduclinh",
     fullname: "Vu Duc Linh",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -4289,7 +4289,7 @@ export const users = [
     email: "vuducduong@magicpost.com",
     password: "vuducduong",
     fullname: "Vu Duc Duong",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -4298,7 +4298,7 @@ export const users = [
     email: "vuducngoc@magicpost.com",
     password: "vuducngoc",
     fullname: "Vu Duc Ngoc",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -4307,7 +4307,7 @@ export const users = [
     email: "vuduchoa@magicpost.com",
     password: "vuduchoa",
     fullname: "Vu Duc Hoa",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -4316,7 +4316,7 @@ export const users = [
     email: "vuduc@magicpost.com",
     password: "vuduc",
     fullname: "Vu Duc ",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -4325,7 +4325,7 @@ export const users = [
     email: "vuthuyanh@magicpost.com",
     password: "vuthuyanh",
     fullname: "Vu Thuy Anh",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -4334,7 +4334,7 @@ export const users = [
     email: "vuthuyduc@magicpost.com",
     password: "vuthuyduc",
     fullname: "Vu Thuy Duc",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
   {
@@ -4343,7 +4343,7 @@ export const users = [
     email: "vuthuyhuy@magicpost.com",
     password: "vuthuyhuy",
     fullname: "Vu Thuy Huy",
-    officeCode: 3,
+    officeCode: 33,
     type: "Warehouse Employee",
   },
   {
@@ -4352,7 +4352,7 @@ export const users = [
     email: "vuthuylinh@magicpost.com",
     password: "vuthuylinh",
     fullname: "Vu Thuy Linh",
-    officeCode: 4,
+    officeCode: 34,
     type: "Warehouse Employee",
   },
   {
@@ -4361,7 +4361,7 @@ export const users = [
     email: "vuthuyduong@magicpost.com",
     password: "vuthuyduong",
     fullname: "Vu Thuy Duong",
-    officeCode: 5,
+    officeCode: 35,
     type: "Warehouse Employee",
   },
   {
@@ -4370,7 +4370,7 @@ export const users = [
     email: "vuthuyngoc@magicpost.com",
     password: "vuthuyngoc",
     fullname: "Vu Thuy Ngoc",
-    officeCode: 6,
+    officeCode: 36,
     type: "Warehouse Employee",
   },
   {
@@ -4379,7 +4379,7 @@ export const users = [
     email: "vuthuyhoa@magicpost.com",
     password: "vuthuyhoa",
     fullname: "Vu Thuy Hoa",
-    officeCode: 7,
+    officeCode: 37,
     type: "Warehouse Employee",
   },
   {
@@ -4388,7 +4388,7 @@ export const users = [
     email: "vuthuy@magicpost.com",
     password: "vuthuy",
     fullname: "Vu Thuy ",
-    officeCode: 8,
+    officeCode: 38,
     type: "Warehouse Employee",
   },
   {
@@ -4397,7 +4397,7 @@ export const users = [
     email: "vuthanhanh@magicpost.com",
     password: "vuthanhanh",
     fullname: "Vu Thanh Anh",
-    officeCode: 9,
+    officeCode: 39,
     type: "Warehouse Employee",
   },
   {
@@ -4406,7 +4406,7 @@ export const users = [
     email: "vuthanhduc@magicpost.com",
     password: "vuthanhduc",
     fullname: "Vu Thanh Duc",
-    officeCode: 10,
+    officeCode: 40,
     type: "Warehouse Employee",
   },
   {
@@ -4415,7 +4415,7 @@ export const users = [
     email: "vuthanhhuy@magicpost.com",
     password: "vuthanhhuy",
     fullname: "Vu Thanh Huy",
-    officeCode: 11,
+    officeCode: 41,
     type: "Warehouse Employee",
   },
   {
@@ -4424,7 +4424,7 @@ export const users = [
     email: "vuthanhlinh@magicpost.com",
     password: "vuthanhlinh",
     fullname: "Vu Thanh Linh",
-    officeCode: 12,
+    officeCode: 42,
     type: "Warehouse Employee",
   },
   {
@@ -4433,7 +4433,7 @@ export const users = [
     email: "vuthanhduong@magicpost.com",
     password: "vuthanhduong",
     fullname: "Vu Thanh Duong",
-    officeCode: 13,
+    officeCode: 43,
     type: "Warehouse Employee",
   },
   {
@@ -4442,7 +4442,7 @@ export const users = [
     email: "vuthanhngoc@magicpost.com",
     password: "vuthanhngoc",
     fullname: "Vu Thanh Ngoc",
-    officeCode: 14,
+    officeCode: 44,
     type: "Warehouse Employee",
   },
   {
@@ -4451,7 +4451,7 @@ export const users = [
     email: "vuthanhhoa@magicpost.com",
     password: "vuthanhhoa",
     fullname: "Vu Thanh Hoa",
-    officeCode: 15,
+    officeCode: 45,
     type: "Warehouse Employee",
   },
   {
@@ -4460,7 +4460,7 @@ export const users = [
     email: "vuthanh@magicpost.com",
     password: "vuthanh",
     fullname: "Vu Thanh ",
-    officeCode: 16,
+    officeCode: 46,
     type: "Warehouse Employee",
   },
   {
@@ -4469,7 +4469,7 @@ export const users = [
     email: "vuthienanh@magicpost.com",
     password: "vuthienanh",
     fullname: "Vu Thien Anh",
-    officeCode: 17,
+    officeCode: 47,
     type: "Warehouse Employee",
   },
   {
@@ -4478,7 +4478,7 @@ export const users = [
     email: "vuthienduc@magicpost.com",
     password: "vuthienduc",
     fullname: "Vu Thien Duc",
-    officeCode: 18,
+    officeCode: 48,
     type: "Warehouse Employee",
   },
   {
@@ -4487,7 +4487,7 @@ export const users = [
     email: "vuthienhuy@magicpost.com",
     password: "vuthienhuy",
     fullname: "Vu Thien Huy",
-    officeCode: 19,
+    officeCode: 49,
     type: "Warehouse Employee",
   },
   {
@@ -4496,7 +4496,7 @@ export const users = [
     email: "vuthienlinh@magicpost.com",
     password: "vuthienlinh",
     fullname: "Vu Thien Linh",
-    officeCode: 20,
+    officeCode: 50,
     type: "Warehouse Employee",
   },
   {
@@ -4505,7 +4505,7 @@ export const users = [
     email: "vuthienduong@magicpost.com",
     password: "vuthienduong",
     fullname: "Vu Thien Duong",
-    officeCode: 21,
+    officeCode: 51,
     type: "Warehouse Employee",
   },
   {
@@ -4514,7 +4514,7 @@ export const users = [
     email: "vuthienngoc@magicpost.com",
     password: "vuthienngoc",
     fullname: "Vu Thien Ngoc",
-    officeCode: 22,
+    officeCode: 52,
     type: "Warehouse Employee",
   },
   {
@@ -4523,7 +4523,7 @@ export const users = [
     email: "vuthienhoa@magicpost.com",
     password: "vuthienhoa",
     fullname: "Vu Thien Hoa",
-    officeCode: 23,
+    officeCode: 53,
     type: "Warehouse Employee",
   },
   {
@@ -4532,7 +4532,7 @@ export const users = [
     email: "vuthien@magicpost.com",
     password: "vuthien",
     fullname: "Vu Thien ",
-    officeCode: 24,
+    officeCode: 54,
     type: "Warehouse Employee",
   },
   {
@@ -4541,7 +4541,7 @@ export const users = [
     email: "vutuananh@magicpost.com",
     password: "vutuananh",
     fullname: "Vu Tuan Anh",
-    officeCode: 25,
+    officeCode: 55,
     type: "Warehouse Employee",
   },
   {
@@ -4550,7 +4550,7 @@ export const users = [
     email: "vutuanduc@magicpost.com",
     password: "vutuanduc",
     fullname: "Vu Tuan Duc",
-    officeCode: 26,
+    officeCode: 56,
     type: "Warehouse Employee",
   },
   {
@@ -4559,7 +4559,7 @@ export const users = [
     email: "vutuanhuy@magicpost.com",
     password: "vutuanhuy",
     fullname: "Vu Tuan Huy",
-    officeCode: 27,
+    officeCode: 57,
     type: "Warehouse Employee",
   },
   {
@@ -4568,7 +4568,7 @@ export const users = [
     email: "vutuanlinh@magicpost.com",
     password: "vutuanlinh",
     fullname: "Vu Tuan Linh",
-    officeCode: 28,
+    officeCode: 58,
     type: "Warehouse Employee",
   },
   {
@@ -4577,7 +4577,7 @@ export const users = [
     email: "vutuanduong@magicpost.com",
     password: "vutuanduong",
     fullname: "Vu Tuan Duong",
-    officeCode: 29,
+    officeCode: 59,
     type: "Warehouse Employee",
   },
   {
@@ -4586,7 +4586,7 @@ export const users = [
     email: "vutuanngoc@magicpost.com",
     password: "vutuanngoc",
     fullname: "Vu Tuan Ngoc",
-    officeCode: 30,
+    officeCode: 60,
     type: "Warehouse Employee",
   },
   {
@@ -4595,7 +4595,7 @@ export const users = [
     email: "vutuanhoa@magicpost.com",
     password: "vutuanhoa",
     fullname: "Vu Tuan Hoa",
-    officeCode: 1,
+    officeCode: 31,
     type: "Warehouse Employee",
   },
   {
@@ -4604,7 +4604,7 @@ export const users = [
     email: "vutuan@magicpost.com",
     password: "vutuan",
     fullname: "Vu Tuan ",
-    officeCode: 2,
+    officeCode: 32,
     type: "Warehouse Employee",
   },
 ];

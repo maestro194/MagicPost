@@ -31,7 +31,7 @@ export default function WarehouseEmployee() {
     if (selected === "profile") {
       // console.log("profile!");
     } else if (selected === "packages") {
-      console.log("packages!");
+      // console.log("packages!");
       try {
         dispatch(fetchPackagesStart());
         const res = await fetch(`/api/oe/packages/${currentUser.officeCode}`, {
@@ -41,7 +41,7 @@ export default function WarehouseEmployee() {
           },
         });
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         if (data.success === false) {
           dispatch(fetchPackagesFailure(data.message));
           return;

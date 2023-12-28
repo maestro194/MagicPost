@@ -166,15 +166,18 @@ export const omPackages = async (req, res) => {
 // WE call
 
 export const wePackages = async (req, res) => {
-    try {
-        const packages = await Packages.find();
-        res.status(200).json({
-            packages: packages,
-        })
-    } catch (err) { 
-        res.status(404).json({
-            message: err.message,
-        })
+    if (req.params.id) {
+        const currentOffice = req.params.id;
+        try {
+            const packages = await Packages.find({currentOffice});
+            res.status(200).json({
+                packages: packages,
+            })
+        } catch (err) { 
+            res.status(404).json({
+                message: err.message,
+            })
+        }
     }
 }
 

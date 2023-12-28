@@ -4,7 +4,7 @@ import { wePackages } from '../controllers/user.controller.js';
 
 const router = express.Router();
 
-router.get('/packages', wePackages)
+router.get('/packages/:id', wePackages)
 
 export default router;
 
