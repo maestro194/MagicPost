@@ -456,25 +456,6 @@ export default function Packages(
         </Dialog>
       </div>
 
-      {/* <div className='flex flex-row'>
-        <h1 className='mr-2 text-lg'>
-          Filter
-        </h1>
-        <TextField
-          autoFocus
-          id="packageId"
-          label="ID"
-          type="text"
-          onChange={(event) => handleFilterChange("packageId", event.target.value)}
-        />
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mr-2 rounded"
-          // onClick={handleOpenCreateForm}
-        >
-          Create Package
-        </button>
-      </div> */}
-
       <div className="bg-white border rounded-lg h-[46.05rem]">
         <Box className="h-full">
           <DataGrid
