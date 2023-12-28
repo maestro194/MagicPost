@@ -466,7 +466,6 @@ export default function Packages(
               { field: "totalValue", headerName: "VALUE", flex: 2 },
               { field: "weight", headerName: "WEIGHT", flex: 2},
               { field: "deliveryStatus", headerName: "STATUS", flex: 2 },
-              { field: "currentOffice", headerName: "OFFICE", flex: 1}
             ]}
             rows={packages || []}
             initialState={{

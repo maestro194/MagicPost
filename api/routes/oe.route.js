@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 router.get('/transactions/:id', oeTransactions)
-router.get('/packages', oePackages)
+router.get('/packages/:id', oePackages)
 router.post('/createpackage', oeCreatePackages)
 router.put('/sendpackage', oeSendPackage)
 router.put('/receivepackage', oeReceivePackage)

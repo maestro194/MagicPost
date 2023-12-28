@@ -4,7 +4,7 @@ import Profile from "./components/Profile";
 import Packages from "./components/Packages";
 
 import {
-
+  fetchPackagesStart, fetchPackagesSuccess, fetchPackagesFailure,
 } from "../../redux/slice/weSlice";
 
 import { useDispatch } from "react-redux";
@@ -13,6 +13,9 @@ import { useSelector } from "react-redux";
 export default function WarehouseEmployee() {
   const { currentUser } = useSelector((state) => state.user);
   const [state, setState] = useState("profile");
+  const [packages, setPackages] = useState([{packageId: 1, sender: "test", fromLocation: "", receiver: "", toLocation: "", packageType: "", totalValue: "", weight: "", deliveredDate: "", shippingCost: "", cashOnDelivery: "", receivedDate: "", notes: "", deliveryStatus: "",}]);
+
+  const dispatch = useDispatch();
 
   const handleClick = (selected) => {
     console.log(selected);
@@ -23,6 +26,26 @@ export default function WarehouseEmployee() {
   const handleData = async (selected) => {
     if (selected === "profile") {
       console.log("profile!");
+    } else if(selected === "packages") {
+      try {
+        dispatch(fetchPackagesStart());
+        const res = await fetch(`/api/we/packages`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        const data = await res.json();
+        // console.log(data);
+        if (data.success === false) {
+          dispatch(fetchPackagesFailure(data.message));
+          return;
+        }
+        setPackages(data);
+        dispatch(fetchPackagesSuccess(data));
+      } catch (error) {
+        dispatch(fetchPackagesFailure(error.message));
+      }
     } else {
       console.log("other!");
     }
@@ -61,7 +84,9 @@ export default function WarehouseEmployee() {
             { state === "profile" ? (
               <Profile />
             ) : state === "packages" ? (
-              <Packages />
+              <Packages 
+                packages={packages.packages}
+              />
             ) :( 
               <div></div>
             )}

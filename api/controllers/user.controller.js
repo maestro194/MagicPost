@@ -180,6 +180,7 @@ export const wePackages = async (req, res) => {
 
 // OE call
 
+// not working
 export const oeTransactions = async (req, res) => {
     try {
         const transactions = await Transaction.find();
@@ -194,17 +195,21 @@ export const oeTransactions = async (req, res) => {
 }
 
 export const oePackages = async (req, res) => {
-    try {
-        const packages = await Packages
-        .find({}, "packageId sender fromLocation receiver toLocation currentOffice packageType totalValue weight deliveredDate shippingCost cashOnDelivery receivedDate notes deliveryStatus")
+    if (req.params.id) {
+        const currentOffice = req.params.id;
 
-        res.status(200).json({
-            packages: packages,
-        })
-    } catch (err) { 
-        res.status(404).json({
-            message: err.message,
-        })
+        try {
+            const packages = await Packages
+            .find({currentOffice}, "packageId sender fromLocation receiver toLocation currentOffice packageType totalValue weight deliveredDate shippingCost cashOnDelivery receivedDate notes deliveryStatus")
+
+            res.status(200).json({
+                packages: packages,
+            })
+        } catch (err) { 
+            res.status(404).json({
+                message: err.message,
+            })
+        }
     }
 }
 

@@ -9,26 +9,32 @@ import {
 } from "../../redux/slice/oeSlice";
 
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 export default function WarehouseEmployee() {
+  const { currentUser } = useSelector((state) => state.user);
+  const [officeCode, setOfficeCode] = useState({
+    currentOffice: (currentUser.officeCode),
+  });
   const [state, setState] = useState("profile");
   const [packages, setPackages] = useState([{packageId: 1, sender: "test", fromLocation: "", receiver: "", toLocation: "", packageType: "", totalValue: "", weight: "", deliveredDate: "", shippingCost: "", cashOnDelivery: "", receivedDate: "", notes: "", deliveryStatus: "",}]);
+
   const dispatch = useDispatch();
 
   const handleClick = (selected) => {
-    console.log(selected);
+    // console.log(selected);
     setState(selected);
     handleData(selected);
   };
 
   const handleData = async (selected) => {
     if (selected === "profile") {
-      console.log("profile!");
+      // console.log("profile!");
     } else if (selected === "packages") {
       console.log("packages!");
       try {
         dispatch(fetchPackagesStart());
-        const res = await fetch(`/api/oe/packages`, {
+        const res = await fetch(`/api/oe/packages/${currentUser.officeCode}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -46,7 +52,7 @@ export default function WarehouseEmployee() {
         dispatch(fetchPackagesFailure(error.message));
       }
     } else if (selected === "transactions") {
-      console.log("transactions!");
+      // console.log("transactions!");
     } else {
       console.log("other!");
     }
