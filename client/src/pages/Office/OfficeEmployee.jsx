@@ -9,10 +9,8 @@ import {
 } from "../../redux/slice/oeSlice";
 
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
 
 export default function WarehouseEmployee() {
-  const { currentUser } = useSelector((state) => state.user);
   const [state, setState] = useState("profile");
   const [packages, setPackages] = useState([{packageId: 1, sender: "test", fromLocation: "", receiver: "", toLocation: "", packageType: "", totalValue: "", weight: "", deliveredDate: "", shippingCost: "", cashOnDelivery: "", receivedDate: "", notes: "", deliveryStatus: "",}]);
   const dispatch = useDispatch();
@@ -58,9 +56,9 @@ export default function WarehouseEmployee() {
     <div>
       {/* left navi */}
       <div className="flex">
-        <div className="bg-white w-16 md:w-64 h-screen overflow-hidden border">
+        <div className="bg-white w-16 md:w-64 h-screen border">
           <div>
-            <h1 className="font-bold text-sm sm:text-xl flex w-full justify-center my-6">
+            <h1 className="font-bold text-sm md:text-xl flex w-full justify-center my-6">
               <span className="text-slate-500">Magic Post</span>
             </h1>
           </div>

@@ -196,8 +196,8 @@ export const oeTransactions = async (req, res) => {
 export const oePackages = async (req, res) => {
     try {
         const packages = await Packages
-        .find({}, "packageId sender fromLocation receiver toLocation packageType totalValue weight deliveredDate shippingCost cashOnDelivery receivedDate notes deliveryStatus")
-        
+        .find({}, "packageId sender fromLocation receiver toLocation currentOffice packageType totalValue weight deliveredDate shippingCost cashOnDelivery receivedDate notes deliveryStatus")
+
         res.status(200).json({
             packages: packages,
         })
@@ -209,16 +209,14 @@ export const oePackages = async (req, res) => {
 }
 
 export const oeCreatePackages = async (req, res) => {
-    console.log(req.body);
-
-    const {sender, fromLocation, receiver, toLocation, packageType, totalValue, weight, shippingCost, cashOnDelivery, notes} = req.body;
+    const {sender, fromLocation, receiver, toLocation, currentOffice, packageType, totalValue, weight, shippingCost, cashOnDelivery, notes} = req.body;
     const deliveredDate = Date.now();
     const receivedDate = null;
     const deliveryStatus = "In transit";
     const packageId = 1 + Math.floor(Math.random() * 1000000);
 
     const newPackage = new Packages({
-        packageId, sender, fromLocation, receiver, toLocation, packageType, totalValue, weight, deliveredDate, shippingCost, cashOnDelivery, receivedDate, notes, deliveryStatus
+        packageId, sender, fromLocation, receiver, toLocation, currentOffice, packageType, totalValue, weight, deliveredDate, shippingCost, cashOnDelivery, receivedDate, notes, deliveryStatus
     })
 
     try {
@@ -233,3 +231,54 @@ export const oeCreatePackages = async (req, res) => {
     }
 }
 
+export const oeSendPackage = async (req, res) => {
+    console.log(req.body);
+    const {packageId, currentOffice} = req.body;
+    const deliveryStatus = "Moved to warehouse";
+    const receivedDate = null;
+
+    try {
+        await Packages.findOneAndUpdate({packageId: packageId}, {currentOffice, deliveryStatus, receivedDate}, {new: true});
+        res.status(200).json({
+            message: "Package sent successfully",
+        })
+    } catch (err) {
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const oeReceivePackage = async (req, res) => {
+    console.log(req.body);
+    const {packageId, currentOffice} = req.body;
+    const deliveryStatus = "Received at office";
+    const receivedDate = null;
+
+    try {
+        await Packages.findOneAndUpdate({packageId: packageId}, {currentOffice, deliveryStatus, receivedDate}, {new: true});
+        res.status(200).json({
+            message: "Package receive successfully",
+        })
+    } catch (error) {
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const oeDeliverPackage = async (req, res) => {
+    const {packageId, deliveryStatus} = req.body;
+    const receivedDate = null;
+
+    try {
+        await Packages.findOneAndUpdate({packageId: packageId}, {deliveryStatus, receivedDate}, {new: true});
+        res.status(200).json({
+            message: deliveryStatus,
+        })
+    } catch (error) {
+        res.status(404).json({
+            message: error.message,
+        })
+    }
+}

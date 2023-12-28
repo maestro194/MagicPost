@@ -26,6 +26,11 @@ const packageSchema = new mongoose.Schema({
         required: true,
     },
 
+    currentOffice: {
+        type: Number,
+        required: true,
+    },
+
     packageType: {
         type: String,
         required: true,
