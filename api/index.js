@@ -8,6 +8,7 @@ import wmRouter from './routes/wm.route.js'
 import omRouter from './routes/om.route.js'
 import weRouter from './routes/we.route.js'
 import oeRouter from './routes/oe.route.js'
+import transactionRouter from './routes/transaction.route.js'
 
 dotenv.config();
 
@@ -49,6 +50,7 @@ app.use('/api/wm', wmRouter);
 app.use('/api/om', omRouter);
 app.use('/api/we', weRouter);
 app.use('/api/oe', oeRouter);
+app.use('/api/transaction', transactionRouter);
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;

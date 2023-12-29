@@ -19,8 +19,14 @@ import {
   receivePackageStart, receivePackageSuccess, receivePackageFailure,
 } from "../../../redux/slice/oeSlice";
 
+import {
+  createTransactionStart, createTransactionSuccess, createTransactionFailure,
+  fetchTransactionsStart, fetchTransactionsSuccess, fetchTransactionsFailure,
+} from "../../../redux/slice/transactionSlice";
+
 import { useDispatch } from "react-redux";  
 import { useSelector } from "react-redux";
+import { set } from 'mongoose';
 
 export default function Packages(
   {packages},
@@ -36,7 +42,7 @@ export default function Packages(
   // send package
   const [openSend, setOpenSend] = useState(false);
   const [sendData, setSendData] = useState({
-    currentOffice: (currentUser.officeCode + 30),
+    currentOffice: (currentUser.officeCode + 63),
   });
   // receive package
   const [openReceive, setOpenReceive] = useState(false);
@@ -60,6 +66,8 @@ export default function Packages(
       label: "Not Delivered",
     }
   ];
+  // transaction
+  const [transactionData, setTransactionData] = useState({});
 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -73,6 +81,10 @@ export default function Packages(
   }
 
   const handleOpenCreateForm = () => {
+    packageData.packageId = 1 + Math.floor(Math.random() * 1000000);
+    transactionData.packageId = packageData.packageId;
+    transactionData.fromLocation = currentUser.officeCode;
+    transactionData.toLocation = currentUser.officeCode;
     setOpenCreate(true);
   }
 
@@ -80,6 +92,7 @@ export default function Packages(
     setPackageData({
       currentOffice: currentUser.officeCode.toString(),
     });
+    setTransactionData({});
     setOpenCreate(false);
   }
 
@@ -103,8 +116,9 @@ export default function Packages(
 				dispatch(createPackagesFailure(data.message));
 				return;
 			}
-			setLoading(false);
-			setError(null);
+      setLoading(false);
+      setError(null);
+      handleCreateTransaction();
       handleCloseCreateForm();
       dispatch(createPackagesSuccess(data));
     } catch (error) {
@@ -117,13 +131,17 @@ export default function Packages(
       ...sendData,
       [name]: value,
     });
+    handleTransactionChange(name, value);
   }
 
   const handleOpenSendForm = () => {
     setOpenSend(true);
+    transactionData.fromLocation = currentUser.officeCode;
+    transactionData.toLocation = currentUser.officeCode + 63;
   }
 
   const handleCloseSendForm = () => {
+    setTransactionData({});
     setOpenSend(false);
   }
 
@@ -147,6 +165,7 @@ export default function Packages(
       }
       setLoading(false);
       setError(null);
+      handleCreateTransaction();
       handleCloseSendForm();
       dispatch(sendPackagesSuccess(data));
     } catch (error) {
@@ -159,10 +178,13 @@ export default function Packages(
       ...receiveData,
       [name]: value,
     });
+    handleTransactionChange(name, value);
   }
 
   const handleOpenReceiveForm = () => {
     setOpenReceive(true);
+    transactionData.fromLocation = currentUser.officeCode + 63;
+    transactionData.toLocation = currentUser.officeCode;
   }
 
   const handleCloseReceiveForm = () => {
@@ -189,6 +211,7 @@ export default function Packages(
       }
       setLoading(false);
       setError(null);
+      handleCreateTransaction();
       handleCloseReceiveForm();
       dispatch(receivePackageSuccess(data));
     } catch (error) {
@@ -201,10 +224,12 @@ export default function Packages(
       ...deliverData,
       [name]: value,
     });
+    handleTransactionChange(name, value);
   }
 
   const handleOpenDeliverForm = () => {
     setOpenDeliver(true);
+    transactionData.fromLocation = currentUser.officeCode;
   }
 
   const handleCloseDeliverForm = () => {
@@ -231,8 +256,70 @@ export default function Packages(
       }
       setLoading(false);
       setError(null);
+      handleCreateTransaction();
       handleCloseDeliverForm();
       dispatch(receivePackageSuccess(data));
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+
+  const handleTransactionChange = (name, value) => {
+    setTransactionData({
+      ...transactionData,
+      [name]: value,
+    });
+  }
+  
+  const handleCreateTransaction = async (e) => {
+    console.log(transactionData);
+
+    try {
+      dispatch(createTransactionStart());
+      const res = await fetch('/api/transaction/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(transactionData),
+      }
+      );
+      const data = await res.json();
+      console.log(data)
+      if(data.success === false) {
+        dispatch(createTransactionFailure(data.message));
+        return;
+      }
+      setLoading(false);
+      setError(null);
+      dispatch(createTransactionSuccess(data));
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+
+  const handleCreateTransactionStatus = async (e) => {
+    console.log(transactionData);
+    
+    try {
+      dispatch(createTransactionStart());
+      const res = await fetch('/api/transaction/createstatus', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(transactionData),
+      }
+      );
+      const data = await res.json();
+      console.log(data)
+      if(data.success === false) {
+        dispatch(createTransactionFailure(data.message));
+        return;
+      }
+      setLoading(false);
+      setError(null);
+      dispatch(createTransactionSuccess(data));
     } catch (error) {
       setError(error.message);
     }
@@ -465,7 +552,7 @@ export default function Packages(
               { field: "packageType", headerName: "TYPE", flex: 1 },
               { field: "totalValue", headerName: "VALUE", flex: 2 },
               { field: "weight", headerName: "WEIGHT", flex: 2},
-              { field: "deliveryStatus", headerName: "STATUS", flex: 2 },
+              { field: "deliveryStatus", headerName: "STATUS", flex: 2 }
             ]}
             rows={packages || []}
             initialState={{

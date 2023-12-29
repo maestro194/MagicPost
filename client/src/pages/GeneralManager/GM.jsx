@@ -41,7 +41,7 @@ export default function GM() {
 
   const handleData = async (selected) => {
     if (selected === "profile") {
-      console.log("profile!");
+      // console.log("profile!");
     } else if (selected === "users") {
       try {
         dispatch(fetchUsersStart());

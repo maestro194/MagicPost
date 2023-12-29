@@ -51,8 +51,6 @@ export default function WarehouseEmployee() {
       } catch (error) {
         dispatch(fetchPackagesFailure(error.message));
       }
-    } else if (selected === "transactions") {
-      // console.log("transactions!");
     } else {
       console.log("other!");
     }
@@ -83,13 +81,6 @@ export default function WarehouseEmployee() {
               <FaCube className="m-1" />
               <span className="hidden md:inline-flex">Packages</span>
             </li>
-            <li
-              className="flex gap-3 w-full h-12 py-3 pl-4 hover:bg-slate-300"
-              onClick={() => handleClick("transactions")}
-            >
-              <FaExchangeAlt className="m-1" />
-              <span className="hidden md:inline-flex">Transactions</span>
-            </li>
           </ul>
         </div>
 
@@ -102,8 +93,6 @@ export default function WarehouseEmployee() {
               <Packages 
                 packages={packages.packages}
               />
-            ) : state === "transactions" ? (
-              <Transactions />
             ) :( 
               <div></div>
             )}

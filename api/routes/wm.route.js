@@ -4,7 +4,7 @@ import { wmUsers, wmPackages, wmDeleteUser } from '../controllers/user.controlle
 
 const router = express.Router();
 
-router.get('/users', wmUsers)
+router.get('/users/:id', wmUsers)
 router.get('/packages', wmPackages)
 router.delete('/delete', wmDeleteUser)
 

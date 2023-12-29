@@ -11,15 +11,12 @@ import {
   MenuItem,
   TextField,
 } from "@mui/material";
-
-export default function Transactions(
-  { transactions }
+export default function SearchQuery(
+    { transactions }
 ) {
   return (
     <div>
-      <h1 className="font-bold text-3xl py-6">Transactions</h1>
-
-      <div className="bg-white border rounded-lg h-[46.05rem]">
+      <div className="bg-white border rounded-lg h-[40rem]">
         <Box className="h-full">
           <DataGrid
             getRowId={(transactions) => transactions.id}
@@ -43,5 +40,5 @@ export default function Transactions(
         </Box>
       </div>
     </div>
-  );
+  )
 }

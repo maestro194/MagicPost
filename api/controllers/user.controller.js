@@ -71,7 +71,7 @@ export const gmOffices = async (req, res) => {
 // WM call
 export const wmUsers = async (req, res) => {
     try {
-        const users = await User.find({type: /Warehouse Employee/i}, "id username email type fullname officeCode");
+        const users = await User.find({type: /Employee/i, officeCode: req.params.id}, "id username email type fullname officeCode");
         res.status(200).json({
             users: users,
         })
@@ -119,7 +119,7 @@ export const wmPackages = async (req, res) => {
 
 export const omUsers = async (req, res) => {
     try {
-        const users = await User.find({type: /Office Employee/i}, "id username email type fullname officeCode");
+        const users = await User.find({type: /Office Employee/i, officeCode: req.params.id}, "id username email type fullname officeCode");
         res.status(200).json({
             users: users,
         })
@@ -218,20 +218,6 @@ export const weTransferPackage = async (req, res) => {
 
 
 // OE call
-
-// not working
-export const oeTransactions = async (req, res) => {
-    try {
-        const transactions = await Transaction.find();
-        res.status(200).json({
-            transactions: transactions,
-        })
-    } catch (err) { 
-        res.status(404).json({
-            message: err.message,
-        })
-    }
-}
 
 export const oePackages = async (req, res) => {
     if (req.params.id) {

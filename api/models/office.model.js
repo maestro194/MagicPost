@@ -4,11 +4,11 @@ const officeSchema = new mongoose.Schema({
     officeCode: {
         type: Number,
         required: true,
+        unique: true,
     },
     officeName: {
         type: String, 
         required: true,
-        unique: true,
     },
     location: {
         type: String,

@@ -15,7 +15,6 @@ const transactionSchema = new mongoose.Schema({
   },
   toLocation: {
     type: Number,
-    required: true,
   },
   status: {
     type: String,

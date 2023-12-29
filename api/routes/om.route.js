@@ -4,7 +4,7 @@ import { omUsers, omPackages, omDeleteUser } from '../controllers/user.controlle
 
 const router = express.Router();
 
-router.get('/users', omUsers)
+router.get('/users/:id', omUsers)
 router.get('/packages', omPackages)
 router.delete('/delete', omDeleteUser)
 

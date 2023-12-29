@@ -33,125 +33,257 @@ const accountTypes = [
 
 const officeCode = [
   {
+    label: "An Giang",
     value: "1",
-    label: "Ba Dinh",
-  },
-  {
+    },
+    {
+    label: "Bac Giang",
     value: "2",
-    label: "Hoan Kiem",
-  },
-  {
+    },
+    {
+    label: "Bac Kan",
     value: "3",
-    label: "Hai Ba Trung",
-  },
-  {
+    },
+    {
+    label: "Bac Lieu",
     value: "4",
-    label: "Dong Da",
-  },
-  {
+    },
+    {
+    label: "Bac Ninh",
     value: "5",
-    label: "Tay Ho",
-  },
-  {
+    },
+    {
+    label: "Ben Tre",
     value: "6",
-    label: "Cau Giay",
-  },
-  {
+    },
+    {
+    label: "Binh Dinh",
     value: "7",
-    label: "Long Bien",
-  },
-  {
+    },
+    {
+    label: "Binh Duong",
     value: "8",
-    label: "Hoang Mai",
-  },
-  {
+    },
+    {
+    label: "Binh Phuoc",
     value: "9",
-    label: "Thanh Xuan",
-  },
-  {
+    },
+    {
+    label: "Binh Thuan",
     value: "10",
-    label: "Ha Dong",
-  },
-  {
+    },
+    {
+    label: "Ca Mau",
     value: "11",
-    label: "Son Tay",
-  },
-  {
+    },
+    {
+    label: "Can Tho",
     value: "12",
-    label: "Ba Vi",
-  },
-  {
+    },
+    {
+    label: "Cao Bang",
     value: "13",
-    label: "Phuc Tho",
-  },
-  {
+    },
+    {
+    label: "Da Nang",
     value: "14",
-    label: "Dan Phuong",
-  },
-  {
+    },
+    {
+    label: "Dak Lak",
     value: "15",
-    label: "Hoai Duc",
-  },
-  {
+    },
+    {
+    label: "Dak Nong",
     value: "16",
-    label: "Quoc Oai",
-  },
-  {
+    },
+    {
+    label: "Dien Bien",
     value: "17",
-    label: "Thach That",
-  },
-  {
+    },
+    {
+    label: "Dong Nai",
     value: "18",
-    label: "Chuong My",
-  },
-  {
+    },
+    {
+    label: "Dong Thap",
     value: "19",
-    label: "Thanh Oai",
-  },
-  {
+    },
+    {
+    label: "Gia Lai",
     value: "20",
-    label: "Thuong Tin",
-  },
-  {
+    },
+    {
+    label: "Ha Giang",
     value: "21",
-    label: "Phu Xuyen",
-  },
-  {
+    },
+    {
+    label: "Ha Nam",
     value: "22",
-    label: "Ung Hoa",
-  },
-  {
+    },
+    {
+    label: "Ha Tinh",
     value: "23",
-    label: "My Duc",
-  },
-  {
+    },
+    {
+    label: "Hai Duong",
     value: "24",
-    label: "Me Linh",
-  },
-  {
+    },
+    {
+    label: "Hai Phong",
     value: "25",
-    label: "Soc Son",
-  },
-  {
+    },
+    {
+    label: "Hanoi",
     value: "26",
-    label: "Dong Anh",
-  },
-  {
+    },
+    {
+    label: "Hau Giang",
     value: "27",
-    label: "Gia Lam",
-  },
-  {
+    },
+    {
+    label: "Ho Chi Minh",
     value: "28",
-    label: "Thanh Tri",
-  },
-  {
+    },
+    {
+    label: "Hoa Binh",
     value: "29",
-    label: "Nam Tu Liem",
-  },
-  {
+    },
+    {
+    label: "Hung Yen",
     value: "30",
-    label: "Bac Tu Liem",
-  }
+    },
+    {
+    label: "Khanh Hoa",
+    value: "31",
+    },
+    {
+    label: "Kien Giang",
+    value: "32",
+    },
+    {
+    label: "Kon Tum",
+    value: "33",
+    },
+    {
+    label: "Lai Chau",
+    value: "34",
+    },
+    {
+    label: "Lam Dong",
+    value: "35",
+    },
+    {
+    label: "Lang Son",
+    value: "36",
+    },
+    {
+    label: "Lao Cai",
+    value: "37",
+    },
+    {
+    label: "Long An",
+    value: "38",
+    },
+    {
+    label: "Nam Dinh",
+    value: "39",
+    },
+    {
+    label: "Nghe An",
+    value: "40",
+    },
+    {
+    label: "Ninh Binh",
+    value: "41",
+    },
+    {
+    label: "Ninh Thuan",
+    value: "42",
+    },
+    {
+    label: "Phu Tho",
+    value: "43",
+    },
+    {
+    label: "Phu Yen",
+    value: "44",
+    },
+    {
+    label: "Quang Binh",
+    value: "45",
+    },
+    {
+    label: "Quang Nam",
+    value: "46",
+    },
+    {
+    label: "Quang Ngai",
+    value: "47",
+    },
+    {
+    label: "Quang Ninh",
+    value: "48",
+    },
+    {
+    label: "Quang Tri",
+    value: "49",
+    },
+    {
+    label: "Soc Trang",
+    value: "50",
+    },
+    {
+    label: "Son La",
+    value: "51",
+    },
+    {
+    label: "Tay Ninh",
+    value: "52",
+    },
+    {
+    label: "Thai Binh",
+    value: "53",
+    },
+    {
+    label: "Thai Nguyen",
+    value: "54",
+    },
+    {
+    label: "Thanh Hoa",
+    value: "55",
+    },
+    {
+    label: "Thua Thien Hue",
+    value: "56",
+    },
+    {
+    label: "Tien Giang",
+    value: "57",
+    },
+    {
+    label: "Tra Vinh",
+    value: "58",
+    },
+    {
+    label: "Tuyen Quang",
+    value: "59",
+    },
+    {
+    label: "Vinh Long",
+    value: "60",
+    },
+    {
+    label: "Vinh Phuc",
+    value: "61",
+    },
+    {
+    label: "Vung Tau",
+    value: "62",
+    },
+    {
+    label: "Yen Bai",
+    value: "63",
+    },
 ];
 
 export default function Users({ users }) {
@@ -185,7 +317,7 @@ export default function Users({ users }) {
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     if(formData.type === "Warehouse Manager") {
-      formData.officeCode = parseInt(formData.officeCode) + 30;
+      formData.officeCode = parseInt(formData.officeCode) + 63;
     }
 		try {
 			setLoading(true);

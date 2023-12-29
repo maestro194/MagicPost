@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import {
   Box,
@@ -12,265 +12,279 @@ import {
   TextField,
 } from "@mui/material";
 
-import { useDispatch } from "react-redux";  
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
 import {
-  fetchPackagesStart, fetchPackagesSuccess, fetchPackagesFailure,
-  sendPackageStart, sendPackageSuccess, sendPackageFailure,
-  transferPackageStart, transferPackageSuccess, transferPackageFailure,
+  sendPackageStart,
+  sendPackageSuccess,
+  sendPackageFailure,
+  transferPackageStart,
+  transferPackageSuccess,
+  transferPackageFailure,
 } from "../../../redux/slice/weSlice";
 
-const officeCode = [
-  {
-    value: "1",
-    label: "Ba Dinh",
-  },
-  {
-    value: "2",
-    label: "Hoan Kiem",
-  },
-  {
-    value: "3",
-    label: "Hai Ba Trung",
-  },
-  {
-    value: "4",
-    label: "Dong Da",
-  },
-  {
-    value: "5",
-    label: "Tay Ho",
-  },
-  {
-    value: "6",
-    label: "Cau Giay",
-  },
-  {
-    value: "7",
-    label: "Long Bien",
-  },
-  {
-    value: "8",
-    label: "Hoang Mai",
-  },
-  {
-    value: "9",
-    label: "Thanh Xuan",
-  },
-  {
-    value: "10",
-    label: "Ha Dong",
-  },
-  {
-    value: "11",
-    label: "Son Tay",
-  },
-  {
-    value: "12",
-    label: "Ba Vi",
-  },
-  {
-    value: "13",
-    label: "Phuc Tho",
-  },
-  {
-    value: "14",
-    label: "Dan Phuong",
-  },
-  {
-    value: "15",
-    label: "Hoai Duc",
-  },
-  {
-    value: "16",
-    label: "Quoc Oai",
-  },
-  {
-    value: "17",
-    label: "Thach That",
-  },
-  {
-    value: "18",
-    label: "Chuong My",
-  },
-  {
-    value: "19",
-    label: "Thanh Oai",
-  },
-  {
-    value: "20",
-    label: "Thuong Tin",
-  },
-  {
-    value: "21",
-    label: "Phu Xuyen",
-  },
-  {
-    value: "22",
-    label: "Ung Hoa",
-  },
-  {
-    value: "23",
-    label: "My Duc",
-  },
-  {
-    value: "24",
-    label: "Me Linh",
-  },
-  {
-    value: "25",
-    label: "Soc Son",
-  },
-  {
-    value: "26",
-    label: "Dong Anh",
-  },
-  {
-    value: "27",
-    label: "Gia Lam",
-  },
-  {
-    value: "28",
-    label: "Thanh Tri",
-  },
-  {
-    value: "29",
-    label: "Nam Tu Liem",
-  },
-  {
-    value: "30",
-    label: "Bac Tu Liem",
-  }
-];
+import {
+  createTransactionStart, createTransactionSuccess, createTransactionFailure,
+  fetchTransactionsStart, fetchTransactionsSuccess, fetchTransactionsFailure,
+} from "../../../redux/slice/transactionSlice";
 
 const warehouseCode = [
   {
-    value: "31",
-    label: "Ba Dinh",
+    label: "An Giang",
+    value: "64",
   },
   {
-    value: "32",
-    label: "Hoan Kiem",
+    label: "Bac Giang",
+    value: "65",
   },
   {
-    value: "33",
-    label: "Hai Ba Trung",
+    label: "Bac Kan",
+    value: "66",
   },
   {
-    value: "34",
-    label: "Dong Da",
+    label: "Bac Lieu",
+    value: "67",
   },
   {
-    value: "35",
-    label: "Tay Ho",
+    label: "Bac Ninh",
+    value: "68",
   },
   {
-    value: "36",
-    label: "Cau Giay",
+    label: "Ben Tre",
+    value: "69",
   },
   {
-    value: "37",
-    label: "Long Bien",
+    label: "Binh Dinh",
+    value: "70",
   },
   {
-    value: "38",
-    label: "Hoang Mai",
+    label: "Binh Duong",
+    value: "71",
   },
   {
-    value: "39",
-    label: "Thanh Xuan",
+    label: "Binh Phuoc",
+    value: "72",
   },
   {
-    value: "40",
-    label: "Ha Dong",
+    label: "Binh Thuan",
+    value: "73",
   },
   {
-    value: "41",
-    label: "Son Tay",
+    label: "Ca Mau",
+    value: "74",
   },
   {
-    value: "42",
-    label: "Ba Vi",
+    label: "Can Tho",
+    value: "75",
   },
   {
-    value: "43",
-    label: "Phuc Tho",
+    label: "Cao Bang",
+    value: "76",
   },
   {
-    value: "44",
-    label: "Dan Phuong",
+    label: "Da Nang",
+    value: "77",
   },
   {
-    value: "45",
-    label: "Hoai Duc",
+    label: "Dak Lak",
+    value: "78",
   },
   {
-    value: "46",
-    label: "Quoc Oai",
+    label: "Dak Nong",
+    value: "79",
   },
   {
-    value: "47",
-    label: "Thach That",
+    label: "Dien Bien",
+    value: "80",
   },
   {
-    value: "48",
-    label: "Chuong My",
+    label: "Dong Nai",
+    value: "81",
   },
   {
-    value: "49",
-    label: "Thanh Oai",
+    label: "Dong Thap",
+    value: "82",
   },
   {
-    value: "50",
-    label: "Thuong Tin",
+    label: "Gia Lai",
+    value: "83",
   },
   {
-    value: "51",
-    label: "Phu Xuyen",
+    label: "Ha Giang",
+    value: "84",
   },
   {
-    value: "52",
-    label: "Ung Hoa",
+    label: "Ha Nam",
+    value: "85",
   },
   {
-    value: "53",
-    label: "My Duc",
+    label: "Ha Tinh",
+    value: "86",
   },
   {
-    value: "54",
-    label: "Me Linh",
+    label: "Hai Duong",
+    value: "87",
   },
   {
-    value: "55",
-    label: "Soc Son",
+    label: "Hai Phong",
+    value: "88",
   },
   {
-    value: "56",
-    label: "Dong Anh",
+    label: "Hanoi",
+    value: "89",
   },
   {
-    value: "57",
-    label: "Gia Lam",
+    label: "Hau Giang",
+    value: "90",
   },
   {
-    value: "58",
-    label: "Thanh Tri",
+    label: "Ho Chi Minh",
+    value: "91",
   },
   {
-    value: "59",
-    label: "Nam Tu Liem",
+    label: "Hoa Binh",
+    value: "92",
   },
   {
-    value: "60",
-    label: "Bac Tu Liem",
-  }
+    label: "Hung Yen",
+    value: "93",
+  },
+  {
+    label: "Khanh Hoa",
+    value: "94",
+  },
+  {
+    label: "Kien Giang",
+    value: "95",
+  },
+  {
+    label: "Kon Tum",
+    value: "96",
+  },
+  {
+    label: "Lai Chau",
+    value: "97",
+  },
+  {
+    label: "Lam Dong",
+    value: "98",
+  },
+  {
+    label: "Lang Son",
+    value: "99",
+  },
+  {
+    label: "Lao Cai",
+    value: "100",
+  },
+  {
+    label: "Long An",
+    value: "101",
+  },
+  {
+    label: "Nam Dinh",
+    value: "102",
+  },
+  {
+    label: "Nghe An",
+    value: "103",
+  },
+  {
+    label: "Ninh Binh",
+    value: "104",
+  },
+  {
+    label: "Ninh Thuan",
+    value: "105",
+  },
+  {
+    label: "Phu Tho",
+    value: "106",
+  },
+  {
+    label: "Phu Yen",
+    value: "107",
+  },
+  {
+    label: "Quang Binh",
+    value: "108",
+  },
+  {
+    label: "Quang Nam",
+    value: "109",
+  },
+  {
+    label: "Quang Ngai",
+    value: "110",
+  },
+  {
+    label: "Quang Ninh",
+    value: "111",
+  },
+  {
+    label: "Quang Tri",
+    value: "112",
+  },
+  {
+    label: "Soc Trang",
+    value: "113",
+  },
+  {
+    label: "Son La",
+    value: "114",
+  },
+  {
+    label: "Tay Ninh",
+    value: "115",
+  },
+  {
+    label: "Thai Binh",
+    value: "116",
+  },
+  {
+    label: "Thai Nguyen",
+    value: "117",
+  },
+  {
+    label: "Thanh Hoa",
+    value: "118",
+  },
+  {
+    label: "Thua Thien Hue",
+    value: "119",
+  },
+  {
+    label: "Tien Giang",
+    value: "120",
+  },
+  {
+    label: "Tra Vinh",
+    value: "121",
+  },
+  {
+    label: "Tuyen Quang",
+    value: "122",
+  },
+  {
+    label: "Vinh Long",
+    value: "123",
+  },
+  {
+    label: "Vinh Phuc",
+    value: "124",
+  },
+  {
+    label: "Vung Tau",
+    value: "125",
+  },
+  {
+    label: "Yen Bai",
+    value: "126",
+  },
 ];
 
-
-export default function Packages(
-  {packages}
-) {
+export default function Packages({ packages }) {
   const { currentUser } = useSelector((state) => state.user);
   const [state, setState] = useState("Create Package");
   const [loading, setLoading] = useState(false);
@@ -283,106 +297,149 @@ export default function Packages(
   // transfer package
   const [openTransfer, setOpenTransfer] = useState(false);
   const [transferData, setTransferData] = useState({
-    currentOffice: currentUser.officeCode - 30,
+    currentOffice: currentUser.officeCode - 63,
   });
+  // create transaction
+  const [transactionData, setTransactionData] = useState({});
+
+  const handleTransactionChange = (name, value) => {
+    setTransactionData({
+      ...transactionData,
+      [name]: value,
+    });
+  }
+  
+  const handleCreateTransaction = async (e) => {
+    console.log(transactionData);
+
+    try {
+      dispatch(createTransactionStart());
+      const res = await fetch('/api/transaction/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(transactionData),
+      }
+      );
+      const data = await res.json();
+      console.log(data)
+      if(data.success === false) {
+        dispatch(createTransactionFailure(data.message));
+        return;
+      }
+      setLoading(false);
+      setError(null);
+      dispatch(createTransactionSuccess(data));
+    } catch (error) {
+      setError(error.message);
+    }
+  }
 
   const handleSendChange = (name, value) => {
     setSendData({
       ...sendData,
       [name]: value,
     });
-  }
+    if(name === "currentOffice") {
+      handleTransactionChange("toLocation", value);
+    } else 
+      handleTransactionChange(name, value);
+  };
 
   const handleOpenSendForm = () => {
     setOpenSend(true);
-  }
+    transactionData.fromLocation = currentUser.officeCode;
+  };
 
   const handleCloseSendForm = () => {
     setOpenSend(false);
-  }
+  };
 
   const handleSubmitSend = async (e) => {
     console.log(sendData);
     e.preventDefault();
     try {
       dispatch(sendPackageStart());
-      const res = await fetch('/api/oe/sendpackage', {
-        method: 'PUT',
+      const res = await fetch("/api/oe/sendpackage", {
+        method: "PUT",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(sendData),
-      }
-      );
+      });
       const data = await res.json();
-      console.log(data)
-      if(data.success === false) {
+      console.log(data);
+      if (data.success === false) {
         dispatch(sendPackageFailure(data.message));
         return;
       }
       setLoading(false);
       setError(null);
+      handleCreateTransaction();
       handleCloseSendForm();
       dispatch(sendPackageSuccess(data));
     } catch (error) {
       setError(error.message);
     }
-  }
+  };
 
   const handleTransferChange = (name, value) => {
     setTransferData({
       ...transferData,
       [name]: value,
     });
-  }
+    handleTransactionChange(name, value);
+  };
 
   const handleOpenTransferForm = () => {
     setOpenTransfer(true);
-  }
+    transactionData.fromLocation = currentUser.officeCode;
+    transactionData.toLocation = currentUser.officeCode - 63;
+  };
 
   const handleCloseTransferForm = () => {
     setOpenTransfer(false);
-  }
+  };
 
   const handleSubmitTransfer = async (e) => {
     e.preventDefault();
     try {
       dispatch(transferPackageStart());
-      const res = await fetch('/api/we/transferpackage', {
-        method: 'PUT',
+      const res = await fetch("/api/we/transferpackage", {
+        method: "PUT",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(transferData),
-      }
-      );
+      });
       const data = await res.json();
-      console.log(data)
-      if(data.success === false) {
+      console.log(data);
+      if (data.success === false) {
         dispatch(transferPackageFailure(data.message));
         return;
       }
       setLoading(false);
       setError(null);
+      handleCreateTransaction();
       handleCloseTransferForm();
       dispatch(transferPackageSuccess(data));
     } catch (error) {
       setError(error.message);
     }
-  }
+  };
 
   return (
     <div>
       <h1 className="font-bold text-3xl py-6">Packages</h1>
 
       <div className="pb-2">
-
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mr-2 mb-2 rounded"
           onClick={handleOpenSendForm}
         >
           Send to Warehouse
-        </button>       
+        </button>
         <Dialog open={openSend} onClose={handleCloseSendForm}>
           <DialogTitle>Send Package</DialogTitle>
           <DialogContent>
@@ -396,7 +453,9 @@ export default function Packages(
               label="ID"
               type="text"
               fullWidth
-              onChange={(event) => handleSendChange("packageId", event.target.value)}
+              onChange={(event) =>
+                handleSendChange("packageId", event.target.value)
+              }
             />
             <TextField
               margin="dense"
@@ -404,7 +463,9 @@ export default function Packages(
               label="Office"
               select
               fullWidth
-              onChange={(event) => handleSendChange("currentOffice", event.target.value)}
+              onChange={(event) =>
+                handleSendChange("currentOffice", event.target.value)
+              }
             >
               {warehouseCode.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -439,7 +500,9 @@ export default function Packages(
               label="ID"
               type="text"
               fullWidth
-              onChange={(event) => handleTransferChange("packageId", event.target.value)}
+              onChange={(event) =>
+                handleTransferChange("packageId", event.target.value)
+              }
             />
             {error && <p className="text-red-500 mt-5">{error}</p>}
           </DialogContent>
@@ -448,7 +511,6 @@ export default function Packages(
             <Button onClick={handleSubmitTransfer}>Transfer</Button>
           </DialogActions>
         </Dialog>
-
       </div>
 
       <div className="bg-white border rounded-lg h-[46.05rem]">
@@ -459,9 +521,8 @@ export default function Packages(
               { field: "packageId", headerName: "ID", flex: 1 },
               { field: "packageType", headerName: "TYPE", flex: 1 },
               { field: "totalValue", headerName: "VALUE", flex: 2 },
-              { field: "weight", headerName: "WEIGHT", flex: 2},
+              { field: "weight", headerName: "WEIGHT", flex: 2 },
               { field: "deliveryStatus", headerName: "STATUS", flex: 2 },
-              { field: "currentOffice", headerName: "OFFICE", flex: 1}
             ]}
             rows={packages || []}
             initialState={{
@@ -474,5 +535,5 @@ export default function Packages(
         </Box>
       </div>
     </div>
-  )
+  );
 }
