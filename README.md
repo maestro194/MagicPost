@@ -15,3 +15,5 @@ Công nghệ sử dụng:
 
 Demo: 
 [https://youtu.be/hJoH7VDTvgE]
+
+Dữ liệu sử dụng trong code được lưu ở đường dẫn /api/data
