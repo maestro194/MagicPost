@@ -181,6 +181,42 @@ export const wePackages = async (req, res) => {
     }
 }
 
+export const weSendPackage = async (req, res) => {
+    // console.log(req.body);
+    const {packageId, currentOffice} = req.body;
+    const deliveryStatus = "Moved to warehouse";
+    const receivedDate = null;
+
+    try {
+        await Packages.findOneAndUpdate({packageId: packageId}, {currentOffice, deliveryStatus, receivedDate}, {new: true});
+        res.status(200).json({
+            message: "Package sent successfully",
+        })
+    } catch (err) {
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+export const weTransferPackage = async (req, res) => {
+    const {packageId, currentOffice} = req.body;
+    const deliveryStatus = "Transfer to office";
+    const receivedDate = null;
+
+    try {
+        await Packages.findOneAndUpdate({packageId: packageId}, {currentOffice, deliveryStatus, receivedDate}, {new: true});
+        res.status(200).json({
+            message: "Package sent successfully",
+        })
+    } catch (err) {
+        res.status(404).json({
+            message: err.message,
+        })
+    }
+}
+
+
 // OE call
 
 // not working
