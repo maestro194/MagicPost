@@ -12,3 +12,6 @@ Công nghệ sử dụng:
 - ExpressJS
 - ReactJS with Redux toolkit
 - NodeJS for server
+
+Demo: 
+[https://youtu.be/hJoH7VDTvgE]

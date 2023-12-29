@@ -52,7 +52,7 @@ export default function Users({ users }) {
   }
 
   const handleCloseForm = () => {
-    setFormData({});
+    setFormData({officeCode: currentUser.officeCode});
     setOpen(false);
   }
 
@@ -77,8 +77,8 @@ export default function Users({ users }) {
 			}
 			setLoading(false);
 			setError(null);
-            handleCloseForm();
-            dispatch(fetchUsersStart());
+      handleCloseForm();
+      dispatch(fetchUsersStart());
 			// console.log(data)
 		} catch (error) {
 			setLoading(false);
